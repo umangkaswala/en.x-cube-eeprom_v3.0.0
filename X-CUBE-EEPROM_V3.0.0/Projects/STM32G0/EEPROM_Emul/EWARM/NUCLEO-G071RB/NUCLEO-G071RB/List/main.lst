@@ -1,0 +1,991 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.4.261/W32 for ARM         09/Dec/2021  11:14:01
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\main.c
+#    Command line      =
+#        -f C:\Users\dekaswum\AppData\Local\Temp\EW4207.tmp
+#        (D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\main.c
+#        -D USE_HAL_DRIVER -D STM32G071xx --preprocess=s
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lC
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lA
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\\
+#        -On --use_c++_inline --require_prototypes -I "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\\" -I
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\CMSIS\DSP\Include\\")
+#    Locale            =  C
+#    List file         =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List\main.lst
+#    Object file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\main.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\main.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    EEPROM_Emul/STM32G0/Src/main.c
+      4            * @author  MCD Application Team
+      5            * @brief   Main program body
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics. 
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the 
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          
+     20          /* Includes ------------------------------------------------------------------*/
+     21          #include "main.h"
+     22          
+     23          /** @addtogroup STM32G0xx_HAL_Applications
+     24            * @{
+     25            */
+     26          
+     27          /** @addtogroup EEPROM_Emulation
+     28            * @{
+     29            */
+     30          
+     31          /* Private typedef -----------------------------------------------------------*/
+     32          /* Private define ------------------------------------------------------------*/
+     33          #define LED_OK       LED4
+     34          #define LED_KO       LED4
+     35          #define FLAG_WUF PWR_FLAG_WUF2
+     36          /* Private macro -------------------------------------------------------------*/
+     37          /* Private variables ---------------------------------------------------------*/
+     38          
+
+   \                                 In section .data, align 4
+     39          uint32_t Index = 1;
+   \                     Index:
+   \        0x0   0x0000'0001        DC32 1
+
+   \                                 In section .bss, align 4
+     40          __IO uint32_t ErasingOnGoing = 0;
+   \                     ErasingOnGoing:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     41          uint32_t a_VarDataTab[NB_OF_VARIABLES] = {0};
+   \                     a_VarDataTab:
+   \        0x0                      DS8 4'000
+
+   \                                 In section .bss, align 4
+     42          uint32_t VarValue = 0;
+   \                     VarValue:
+   \        0x0                      DS8 4
+     43          
+     44          /* Private function prototypes -----------------------------------------------*/
+     45          static void SystemClock_Config(void);
+     46          static void PVD_Config(void);
+     47          static void EXTI13_IRQHandler_Config(void);
+     48          static void Error_Handler(void);
+     49          
+     50          /* Private functions ---------------------------------------------------------*/
+     51          
+     52          /**
+     53            * @brief  Main program.
+     54            * @param  None
+     55            * @retval None
+     56            */
+
+   \                                 In section .text, align 2, keep-with-next
+     57          int main(void)
+     58          {
+   \                     main: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+     59            EE_Status ee_status = EE_OK;
+   \        0x2   0x2400             MOVS     R4,#+0
+     60          
+     61          /* STM32G0xx HAL library initialization:
+     62                 - Configure the Flash prefetch
+     63                 - Systick timer is configured by default as source of time base, but user
+     64                   can eventually implement his proper time base source (a general purpose
+     65                   timer for example or other time source), keeping in mind that Time base
+     66                   duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and
+     67                   handled in milliseconds basis.
+     68                 - Set NVIC Group Priority to 4
+     69                 - Low Level Initialization
+     70               */
+     71            HAL_Init();
+   \        0x4   0x....'....        BL       HAL_Init
+     72          
+     73            /* Configure the system clock to 64 MHz */
+     74            SystemClock_Config();
+   \        0x8   0x....'....        BL       SystemClock_Config
+     75          
+     76            /* Enable and set FLASH Interrupt priority */
+     77            /* FLASH interrupt is used for the purpose of pages clean up under interrupt */
+     78            HAL_NVIC_SetPriority(FLASH_IRQn, 0, 0);
+   \        0xC   0x2200             MOVS     R2,#+0
+   \        0xE   0x2100             MOVS     R1,#+0
+   \       0x10   0x2003             MOVS     R0,#+3
+   \       0x12   0x....'....        BL       HAL_NVIC_SetPriority
+     79            HAL_NVIC_EnableIRQ(FLASH_IRQn);
+   \       0x16   0x2003             MOVS     R0,#+3
+   \       0x18   0x....'....        BL       HAL_NVIC_EnableIRQ
+     80          
+     81            /* Unlock the Flash Program Erase controller */
+     82            HAL_FLASH_Unlock();
+   \       0x1C   0x....'....        BL       HAL_FLASH_Unlock
+     83          
+     84            /* Enable Power Control clock */
+     85            __HAL_RCC_PWR_CLK_ENABLE();
+   \       0x20   0x2080             MOVS     R0,#+128
+   \       0x22   0x0540             LSLS     R0,R0,#+21       ;; #+268435456
+   \       0x24   0x....             LDR      R1,??DataTable4  ;; 0x4002103c
+   \       0x26   0x680A             LDR      R2,[R1, #+0]
+   \       0x28   0x4302             ORRS     R2,R2,R0
+   \       0x2A   0x600A             STR      R2,[R1, #+0]
+   \       0x2C   0x6809             LDR      R1,[R1, #+0]
+   \       0x2E   0x4008             ANDS     R0,R0,R1
+   \       0x30   0x9000             STR      R0,[SP, #+0]
+   \       0x32   0x9800             LDR      R0,[SP, #+0]
+     86            HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN2);
+   \       0x34   0x2002             MOVS     R0,#+2
+   \       0x36   0x....'....        BL       HAL_PWR_DisableWakeUpPin
+     87           
+     88            /* Configure Programmable Voltage Detector (PVD) (optional) */
+     89            /* PVD interrupt is used to suspend the current application flow in case
+     90               a power-down is detected, allowing the flash interface to finish any
+     91               ongoing operation before a reset is triggered. */
+     92            PVD_Config();
+   \       0x3A   0x....'....        BL       PVD_Config
+     93          
+     94            /* Configure LED_KO & LED_OK */
+     95            BSP_LED_Init(LED_KO);
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x....'....        BL       BSP_LED_Init
+     96            BSP_LED_Init(LED_OK);
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0x....'....        BL       BSP_LED_Init
+     97            BSP_LED_Off(LED_KO);
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x....'....        BL       BSP_LED_Off
+     98            BSP_LED_Off(LED_OK);
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0x....'....        BL       BSP_LED_Off
+     99              
+    100            /* Activate NMI generation when two errors are detected */
+    101            __HAL_FLASH_ENABLE_IT(FLASH_IT_ECCC);	
+   \       0x56   0x....             LDR      R0,??DataTable4_1  ;; 0x40022018
+   \       0x58   0x6801             LDR      R1,[R0, #+0]
+   \       0x5A   0x2280             MOVS     R2,#+128
+   \       0x5C   0x0452             LSLS     R2,R2,#+17       ;; #+16777216
+   \       0x5E   0x430A             ORRS     R2,R2,R1
+   \       0x60   0x6002             STR      R2,[R0, #+0]
+    102          
+    103            /* Set EEPROM emulation firmware to erase all potentially incompletely erased
+    104               pages if the system came from an asynchronous reset. Conditional erase is
+    105               safe to use if all Flash operations where completed before the system reset */
+    106            if(__HAL_PWR_GET_FLAG(PWR_FLAG_SB) == RESET)
+   \       0x62   0x....             LDR      R0,??DataTable4_2  ;; 0x40007010
+   \       0x64   0x6801             LDR      R1,[R0, #+0]
+   \       0x66   0x05C9             LSLS     R1,R1,#+23
+   \       0x68   0xD420             BMI      ??main_0
+    107            {
+    108              /* Blink LED_OK (Green) twice at startup */
+    109              BSP_LED_On(LED_OK);
+   \       0x6A   0x2000             MOVS     R0,#+0
+   \       0x6C   0x....'....        BL       BSP_LED_On
+    110              HAL_Delay(100);
+   \       0x70   0x2064             MOVS     R0,#+100
+   \       0x72   0x....'....        BL       HAL_Delay
+    111              BSP_LED_Off(LED_OK);
+   \       0x76   0x2000             MOVS     R0,#+0
+   \       0x78   0x....'....        BL       BSP_LED_Off
+    112              HAL_Delay(100);
+   \       0x7C   0x2064             MOVS     R0,#+100
+   \       0x7E   0x....'....        BL       HAL_Delay
+    113              BSP_LED_On(LED_OK);
+   \       0x82   0x2000             MOVS     R0,#+0
+   \       0x84   0x....'....        BL       BSP_LED_On
+    114              HAL_Delay(100);
+   \       0x88   0x2064             MOVS     R0,#+100
+   \       0x8A   0x....'....        BL       HAL_Delay
+    115              BSP_LED_Off(LED_OK);
+   \       0x8E   0x2000             MOVS     R0,#+0
+   \       0x90   0x....'....        BL       BSP_LED_Off
+    116              
+    117              /* System reset comes from a power-on reset: Forced Erase */
+    118              /* Initialize EEPROM emulation driver (mandatory) */
+    119              ee_status = EE_Init(EE_FORCED_ERASE);
+   \       0x94   0x2000             MOVS     R0,#+0
+   \       0x96   0x....'....        BL       EE_Init
+   \       0x9A   0x4669             MOV      R1,SP
+   \       0x9C   0x8088             STRH     R0,[R1, #+4]
+    120              if(ee_status != EE_OK) {Error_Handler();}
+   \       0x9E   0x9801             LDR      R0,[SP, #+4]
+   \       0xA0   0xB200             SXTH     R0,R0
+   \       0xA2   0x2800             CMP      R0,#+0
+   \       0xA4   0xD01E             BEQ      ??main_1
+   \       0xA6   0x....'....        BL       Error_Handler
+   \       0xAA   0xE01B             B        ??main_1
+    121            }
+    122            else
+    123            {
+    124              /* Clear the Standby flag */
+    125              __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);
+   \                     ??main_0: (+1)
+   \       0xAC   0x....             LDR      R1,??DataTable4_3  ;; 0x40007018
+   \       0xAE   0x....             LDR      R2,??DataTable4_4  ;; 0x10100
+   \       0xB0   0x600A             STR      R2,[R1, #+0]
+    126              
+    127              /* Check and Clear the Wakeup flag */
+    128              if (__HAL_PWR_GET_FLAG(FLAG_WUF) != RESET)
+   \       0xB2   0x6800             LDR      R0,[R0, #+0]
+   \       0xB4   0x0780             LSLS     R0,R0,#+30
+   \       0xB6   0xD501             BPL      ??main_2
+    129              {
+    130                __HAL_PWR_CLEAR_FLAG(FLAG_WUF);
+   \       0xB8   0x....             LDR      R0,??DataTable4_5  ;; 0x10002
+   \       0xBA   0x6008             STR      R0,[R1, #+0]
+    131              }
+    132              
+    133              /* Blink LED_OK (Green) upon wakeup */
+    134              BSP_LED_On(LED_OK);
+   \                     ??main_2: (+1)
+   \       0xBC   0x2000             MOVS     R0,#+0
+   \       0xBE   0x....'....        BL       BSP_LED_On
+    135              HAL_Delay(100);
+   \       0xC2   0x2064             MOVS     R0,#+100
+   \       0xC4   0x....'....        BL       HAL_Delay
+    136              BSP_LED_Off(LED_OK);
+   \       0xC8   0x2000             MOVS     R0,#+0
+   \       0xCA   0x....'....        BL       BSP_LED_Off
+    137              
+    138              /* System reset comes from a STANDBY wakeup: Conditional Erase*/
+    139              /* Initialize EEPROM emulation driver (mandatory) */
+    140              ee_status = EE_Init(EE_CONDITIONAL_ERASE);
+   \       0xCE   0x2001             MOVS     R0,#+1
+   \       0xD0   0x....'....        BL       EE_Init
+   \       0xD4   0x4669             MOV      R1,SP
+   \       0xD6   0x8088             STRH     R0,[R1, #+4]
+    141              if(ee_status != EE_OK) {Error_Handler();}
+   \       0xD8   0x9801             LDR      R0,[SP, #+4]
+   \       0xDA   0xB200             SXTH     R0,R0
+   \       0xDC   0x2800             CMP      R0,#+0
+   \       0xDE   0xD001             BEQ      ??main_1
+   \       0xE0   0x....'....        BL       Error_Handler
+    142            }
+    143            
+    144            /* Store 10 values of all variables in EEPROM, ascending order */
+    145            for (VarValue = 1; VarValue <= 1; VarValue++)
+   \                     ??main_1: (+1)
+   \       0xE4   0x2001             MOVS     R0,#+1
+   \       0xE6   0x....             LDR      R1,??DataTable4_6
+   \       0xE8   0x6008             STR      R0,[R1, #+0]
+   \                     ??main_3: (+1)
+   \       0xEA   0x....             LDR      R0,??DataTable4_6
+   \       0xEC   0x6800             LDR      R0,[R0, #+0]
+   \       0xEE   0x2802             CMP      R0,#+2
+   \       0xF0   0xD257             BCS      ??main_4
+    146            {
+    147              for (Index = 1; Index < 1+1; Index++)
+   \       0xF2   0x....             LDR      R4,??DataTable4_7
+   \       0xF4   0x2001             MOVS     R0,#+1
+   \       0xF6   0x6020             STR      R0,[R4, #+0]
+   \                     ??main_5: (+1)
+   \       0xF8   0x6820             LDR      R0,[R4, #+0]
+   \       0xFA   0x2802             CMP      R0,#+2
+   \       0xFC   0xD24C             BCS      ??main_6
+    148              {
+    149                /* Wait any cleanup is completed before accessing flash again */
+    150                while (ErasingOnGoing == 1) { }
+   \                     ??main_7: (+1)
+   \       0xFE   0x....             LDR      R5,??DataTable4_8
+   \      0x100   0x6828             LDR      R0,[R5, #+0]
+   \      0x102   0x2801             CMP      R0,#+1
+   \      0x104   0xD0FB             BEQ      ??main_7
+    151                
+    152                ee_status = EE_WriteVariable32bits(Index, Index*VarValue);
+   \      0x106   0x....             LDR      R7,??DataTable4_6
+   \      0x108   0x6821             LDR      R1,[R4, #+0]
+   \      0x10A   0x6838             LDR      R0,[R7, #+0]
+   \      0x10C   0x4341             MULS     R1,R0,R1
+   \      0x10E   0x6820             LDR      R0,[R4, #+0]
+   \      0x110   0xB280             UXTH     R0,R0
+   \      0x112   0x....'....        BL       EE_WriteVariable32bits
+   \      0x116   0x4669             MOV      R1,SP
+   \      0x118   0x8088             STRH     R0,[R1, #+4]
+    153                ee_status = EE_WriteVariable32bits(Index, Index*VarValue);
+   \      0x11A   0x6821             LDR      R1,[R4, #+0]
+   \      0x11C   0x6838             LDR      R0,[R7, #+0]
+   \      0x11E   0x4341             MULS     R1,R0,R1
+   \      0x120   0x6820             LDR      R0,[R4, #+0]
+   \      0x122   0xB280             UXTH     R0,R0
+   \      0x124   0x....'....        BL       EE_WriteVariable32bits
+   \      0x128   0x4669             MOV      R1,SP
+   \      0x12A   0x8088             STRH     R0,[R1, #+4]
+    154                ee_status|= EE_ReadVariable32bits(Index, &a_VarDataTab[Index-1]);
+   \      0x12C   0x....             LDR      R6,??DataTable4_9
+   \      0x12E   0x9901             LDR      R1,[SP, #+4]
+   \      0x130   0xB209             SXTH     R1,R1
+   \      0x132   0x9100             STR      R1,[SP, #+0]
+   \      0x134   0x6820             LDR      R0,[R4, #+0]
+   \      0x136   0x2104             MOVS     R1,#+4
+   \      0x138   0x4348             MULS     R0,R1,R0
+   \      0x13A   0x1831             ADDS     R1,R6,R0
+   \      0x13C   0x1F09             SUBS     R1,R1,#+4
+   \      0x13E   0x6820             LDR      R0,[R4, #+0]
+   \      0x140   0xB280             UXTH     R0,R0
+   \      0x142   0x....'....        BL       EE_ReadVariable32bits
+   \      0x146   0x9900             LDR      R1,[SP, #+0]
+   \      0x148   0x4308             ORRS     R0,R0,R1
+   \      0x14A   0x4669             MOV      R1,SP
+   \      0x14C   0x8088             STRH     R0,[R1, #+4]
+    155                if (Index*VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
+   \      0x14E   0x6820             LDR      R0,[R4, #+0]
+   \      0x150   0x6839             LDR      R1,[R7, #+0]
+   \      0x152   0x4348             MULS     R0,R1,R0
+   \      0x154   0x6821             LDR      R1,[R4, #+0]
+   \      0x156   0x2204             MOVS     R2,#+4
+   \      0x158   0x4351             MULS     R1,R2,R1
+   \      0x15A   0x1871             ADDS     R1,R6,R1
+   \      0x15C   0x1F09             SUBS     R1,R1,#+4
+   \      0x15E   0x6809             LDR      R1,[R1, #+0]
+   \      0x160   0x4288             CMP      R0,R1
+   \      0x162   0xD001             BEQ      ??main_8
+   \      0x164   0x....'....        BL       Error_Handler
+    156          
+    157                /* Start cleanup IT mode, if cleanup is needed */
+    158                if ((ee_status & EE_STATUSMASK_CLEANUP) == EE_STATUSMASK_CLEANUP) {ErasingOnGoing = 1;ee_status|= EE_CleanUp_IT();}
+   \                     ??main_8: (+1)
+   \      0x168   0x9801             LDR      R0,[SP, #+4]
+   \      0x16A   0xB200             SXTH     R0,R0
+   \      0x16C   0x05C0             LSLS     R0,R0,#+23
+   \      0x16E   0xD508             BPL      ??main_9
+   \      0x170   0x2001             MOVS     R0,#+1
+   \      0x172   0x6028             STR      R0,[R5, #+0]
+   \      0x174   0x9D01             LDR      R5,[SP, #+4]
+   \      0x176   0xB22D             SXTH     R5,R5
+   \      0x178   0x....'....        BL       EE_CleanUp_IT
+   \      0x17C   0x4328             ORRS     R0,R0,R5
+   \      0x17E   0x4669             MOV      R1,SP
+   \      0x180   0x8088             STRH     R0,[R1, #+4]
+    159                if ((ee_status & EE_STATUSMASK_ERROR) == EE_STATUSMASK_ERROR) {Error_Handler();}
+   \                     ??main_9: (+1)
+   \      0x182   0x9801             LDR      R0,[SP, #+4]
+   \      0x184   0xB200             SXTH     R0,R0
+   \      0x186   0xB2C0             UXTB     R0,R0
+   \      0x188   0x28FF             CMP      R0,#+255
+   \      0x18A   0xD101             BNE      ??main_10
+   \      0x18C   0x....'....        BL       Error_Handler
+    160              }
+   \                     ??main_10: (+1)
+   \      0x190   0x6820             LDR      R0,[R4, #+0]
+   \      0x192   0x1C40             ADDS     R0,R0,#+1
+   \      0x194   0x6020             STR      R0,[R4, #+0]
+   \      0x196   0xE7AF             B        ??main_5
+    161            }
+   \                     ??main_6: (+1)
+   \      0x198   0x....             LDR      R0,??DataTable4_6
+   \      0x19A   0x6801             LDR      R1,[R0, #+0]
+   \      0x19C   0x1C49             ADDS     R1,R1,#+1
+   \      0x19E   0x6001             STR      R1,[R0, #+0]
+   \      0x1A0   0xE7A3             B        ??main_3
+    162          
+    163          //  /* Read all the variables */
+    164          //  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
+    165          //  {
+    166          //    ee_status = EE_ReadVariable32bits(Index, &VarValue);
+    167          //    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
+    168          //    if (ee_status != EE_OK) {Error_Handler();}
+    169          //  }
+    170          //
+    171          //  /* Store 1000 values of Variable1,2,3 in EEPROM */
+    172          //  for (VarValue = 1; VarValue <= 1000; VarValue++)
+    173          //  {
+    174          //    while (ErasingOnGoing == 1) { }
+    175          //
+    176          //    ee_status = EE_WriteVariable32bits(1, VarValue);
+    177          //    ee_status|= EE_ReadVariable32bits(1, &a_VarDataTab[0]);
+    178          //    if (VarValue != a_VarDataTab[0]) {Error_Handler();}
+    179          //
+    180          //    ee_status|= EE_WriteVariable32bits(2, ~VarValue);
+    181          //    ee_status|= EE_ReadVariable32bits(2, &a_VarDataTab[1]);
+    182          //    if (~VarValue != a_VarDataTab[1]) {Error_Handler();}
+    183          //
+    184          //    ee_status|= EE_WriteVariable32bits(3, VarValue << 1);
+    185          //    ee_status|= EE_ReadVariable32bits(3, &a_VarDataTab[2]);
+    186          //    if ((VarValue << 1) != a_VarDataTab[2]) {Error_Handler();}
+    187          //
+    188          //    /* Start cleanup polling mode, if cleanup is needed */
+    189          //    if ((ee_status & EE_STATUSMASK_CLEANUP) == EE_STATUSMASK_CLEANUP) {ErasingOnGoing = 0;ee_status|= EE_CleanUp();}
+    190          //    if ((ee_status & EE_STATUSMASK_ERROR) == EE_STATUSMASK_ERROR) {Error_Handler();}
+    191          //  }
+    192          //
+    193          //  /* Read all the variables */
+    194          //  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
+    195          //  {
+    196          //    ee_status = EE_ReadVariable32bits(Index, &VarValue);
+    197          //    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
+    198          //    if (ee_status != EE_OK) {Error_Handler();}
+    199          //  }
+    200          
+    201            /* Test is completed successfully */
+    202            /* Lock the Flash Program Erase controller */
+    203            HAL_FLASH_Lock();
+   \                     ??main_4: (+1)
+   \      0x1A2   0x....'....        BL       HAL_FLASH_Lock
+    204            
+    205            while (1)
+    206            {
+    207             /* Turn LED_OK on for 3sec before entering standby mode */
+    208              BSP_LED_Toggle(LED_OK);
+   \                     ??main_11: (+1)
+   \      0x1A6   0x2000             MOVS     R0,#+0
+   \      0x1A8   0x....'....        BL       BSP_LED_Toggle
+    209              HAL_Delay(3000);
+   \      0x1AC   0x....             LDR      R0,??DataTable4_10  ;; 0xbb8
+   \      0x1AE   0x....'....        BL       HAL_Delay
+    210          
+    211              /* Configure EXTI13 to wakeup from Standby (WKUP2) */
+    212              EXTI13_IRQHandler_Config();
+   \      0x1B2   0x....'....        BL       EXTI13_IRQHandler_Config
+    213              HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN2_HIGH);
+   \      0x1B6   0x2002             MOVS     R0,#+2
+   \      0x1B8   0x....'....        BL       HAL_PWR_EnableWakeUpPin
+    214              
+    215              /* Wait for any cleanup to complete before entering standby/shutdown mode */
+    216              while (ErasingOnGoing == 1) { }
+   \                     ??main_12: (+1)
+   \      0x1BC   0x....             LDR      R0,??DataTable4_8
+   \      0x1BE   0x6800             LDR      R0,[R0, #+0]
+   \      0x1C0   0x2801             CMP      R0,#+1
+   \      0x1C2   0xD0FB             BEQ      ??main_12
+    217              
+    218              /* Clear all related wakeup flags*/
+    219              __HAL_PWR_CLEAR_FLAG(FLAG_WUF);
+   \      0x1C4   0x....             LDR      R0,??DataTable4_5  ;; 0x10002
+   \      0x1C6   0x....             LDR      R1,??DataTable4_3  ;; 0x40007018
+   \      0x1C8   0x6008             STR      R0,[R1, #+0]
+    220              
+    221              /* Enter low-power mode */
+    222              /* NOTE: Care must be taken when using shutdown mode.
+    223                       The SBF bit from the PWR_SR1 register used in this example can not
+    224                       be used anymore. The system status has to be stored in the
+    225                       RTC backup registers. */
+    226              HAL_PWR_EnterSTANDBYMode();
+   \      0x1CA   0x....'....        BL       HAL_PWR_EnterSTANDBYMode
+    227          
+    228              /* This code should never go beyond this point. Reset on Standby wakeup */
+    229              Error_Handler();
+   \      0x1CE   0x....'....        BL       Error_Handler
+   \      0x1D2   0xE7E8             B        ??main_11
+    230            }
+    231          }
+    232          
+    233          /**
+    234            * @brief  FLASH end of operation interrupt callback.
+    235            * @param  ReturnValue: The value saved in this parameter depends on the ongoing procedure
+    236            *                  Mass Erase: Bank number which has been requested to erase
+    237            *                  Page Erase: Page which has been erased
+    238            *                  Program: Address which was selected for data program
+    239            * @retval None
+    240            */
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void HAL_FLASH_EndOfOperationCallback(uint32_t ReturnValue)
+    242          {
+   \                     HAL_FLASH_EndOfOperationCallback: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    243            /* Call CleanUp callback when all requested pages have been erased */
+    244            if( (ReturnValue == (START_PAGE+PAGES_NUMBER/2-1)) || (ReturnValue == (START_PAGE+PAGES_NUMBER-1)) )
+   \        0x4   0x25FF             MOVS     R5,#+255
+   \        0x6   0x02AD             LSLS     R5,R5,#+10       ;; #+261120
+   \        0x8   0x....             LDR      R6,??DataTable4_11  ;; 0x1fff75e0
+   \        0xA   0x27D8             MOVS     R7,#+216
+   \        0xC   0x027F             LSLS     R7,R7,#+9        ;; #+110592
+   \        0xE   0x0038             MOVS     R0,R7
+   \       0x10   0x6831             LDR      R1,[R6, #+0]
+   \       0x12   0x0289             LSLS     R1,R1,#+10
+   \       0x14   0x4029             ANDS     R1,R1,R5
+   \       0x16   0x....'....        BL       __aeabi_uidivmod
+   \       0x1A   0x0AC8             LSRS     R0,R1,#+11
+   \       0x1C   0x1D00             ADDS     R0,R0,#+4
+   \       0x1E   0x4284             CMP      R4,R0
+   \       0x20   0xD00A             BEQ      ??HAL_FLASH_EndOfOperationCallback_0
+   \       0x22   0x0038             MOVS     R0,R7
+   \       0x24   0x6831             LDR      R1,[R6, #+0]
+   \       0x26   0x0289             LSLS     R1,R1,#+10
+   \       0x28   0x400D             ANDS     R5,R5,R1
+   \       0x2A   0x0029             MOVS     R1,R5
+   \       0x2C   0x....'....        BL       __aeabi_uidivmod
+   \       0x30   0x0AC8             LSRS     R0,R1,#+11
+   \       0x32   0x3009             ADDS     R0,R0,#+9
+   \       0x34   0x4284             CMP      R4,R0
+   \       0x36   0xD101             BNE      ??HAL_FLASH_EndOfOperationCallback_1
+    245            {
+    246              EE_EndOfCleanup_UserCallback();
+   \                     ??HAL_FLASH_EndOfOperationCallback_0: (+1)
+   \       0x38   0x....'....        BL       EE_EndOfCleanup_UserCallback
+    247            }
+    248          }
+   \                     ??HAL_FLASH_EndOfOperationCallback_1: (+1)
+   \       0x3C   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    249          
+    250          /**
+    251            * @brief  Clean Up end of operation interrupt callback.
+    252            * @param  None
+    253            * @retval None
+    254            */
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void EE_EndOfCleanup_UserCallback(void)
+    256          {
+    257            ErasingOnGoing = 0;
+   \                     EE_EndOfCleanup_UserCallback: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x....             LDR      R1,??DataTable4_8
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+    258          }
+   \        0x6   0x4770             BX       LR               ;; return
+    259          
+    260          /**
+    261            * @brief System Clock Configuration
+    262            * @retval None
+    263            */
+
+   \                                 In section .text, align 2, keep-with-next
+    264          void SystemClock_Config(void)
+    265          {
+   \                     SystemClock_Config: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB092             SUB      SP,SP,#+72
+   \        0x4   0x2238             MOVS     R2,#+56
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0xA804             ADD      R0,SP,#+16
+   \        0xA   0x....'....        BL       memset
+   \        0xE   0x2210             MOVS     R2,#+16
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x....'....        BL       memset
+    266            RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+    267            RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+    268          
+    269            /** Configure the main internal regulator output voltage 
+    270            */
+    271            HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
+   \       0x18   0x2080             MOVS     R0,#+128
+   \       0x1A   0x0080             LSLS     R0,R0,#+2        ;; #+512
+   \       0x1C   0x....'....        BL       HAL_PWREx_ControlVoltageScaling
+    272            /** Initializes the CPU, AHB and APB busses clocks at 64MHz (top STM32G0 performance)
+    273            */
+    274            RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+   \       0x20   0x2402             MOVS     R4,#+2
+   \       0x22   0x9404             STR      R4,[SP, #+16]
+    275            RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+   \       0x24   0x2080             MOVS     R0,#+128
+   \       0x26   0x0040             LSLS     R0,R0,#+1        ;; #+256
+   \       0x28   0x9007             STR      R0,[SP, #+28]
+    276            RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
+   \       0x2A   0x2500             MOVS     R5,#+0
+   \       0x2C   0x9508             STR      R5,[SP, #+32]
+    277            RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+   \       0x2E   0x2040             MOVS     R0,#+64
+   \       0x30   0x9009             STR      R0,[SP, #+36]
+    278            RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+   \       0x32   0x940B             STR      R4,[SP, #+44]
+    279            RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+   \       0x34   0x940C             STR      R4,[SP, #+48]
+    280            RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
+   \       0x36   0x950D             STR      R5,[SP, #+52]
+    281            RCC_OscInitStruct.PLL.PLLN = 8;
+   \       0x38   0x2008             MOVS     R0,#+8
+   \       0x3A   0x900E             STR      R0,[SP, #+56]
+    282            RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+   \       0x3C   0x2080             MOVS     R0,#+128
+   \       0x3E   0x0280             LSLS     R0,R0,#+10       ;; #+131072
+   \       0x40   0x900F             STR      R0,[SP, #+60]
+    283            RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
+   \       0x42   0x2080             MOVS     R0,#+128
+   \       0x44   0x0480             LSLS     R0,R0,#+18       ;; #+33554432
+   \       0x46   0x9010             STR      R0,[SP, #+64]
+    284            RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
+   \       0x48   0x2080             MOVS     R0,#+128
+   \       0x4A   0x0580             LSLS     R0,R0,#+22       ;; #+536870912
+   \       0x4C   0x9011             STR      R0,[SP, #+68]
+    285            if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+   \       0x4E   0xA804             ADD      R0,SP,#+16
+   \       0x50   0x....'....        BL       HAL_RCC_OscConfig
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD001             BEQ      ??SystemClock_Config_0
+    286            {
+    287              Error_Handler();
+   \       0x58   0x....'....        BL       Error_Handler
+    288            }
+    289            /** Initializes the CPU, AHB and APB busses clocks 
+    290            */
+    291            RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+    292                                        |RCC_CLOCKTYPE_PCLK1;
+   \                     ??SystemClock_Config_0: (+1)
+   \       0x5C   0x2007             MOVS     R0,#+7
+   \       0x5E   0x9000             STR      R0,[SP, #+0]
+    293            RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+   \       0x60   0x9401             STR      R4,[SP, #+4]
+    294            RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+   \       0x62   0x9502             STR      R5,[SP, #+8]
+    295            RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+   \       0x64   0x9503             STR      R5,[SP, #+12]
+    296          
+    297            if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+   \       0x66   0x2102             MOVS     R1,#+2
+   \       0x68   0x4668             MOV      R0,SP
+   \       0x6A   0x....'....        BL       HAL_RCC_ClockConfig
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD001             BEQ      ??SystemClock_Config_1
+    298            {
+    299              Error_Handler();
+   \       0x72   0x....'....        BL       Error_Handler
+    300            }
+    301          }
+   \                     ??SystemClock_Config_1: (+1)
+   \       0x76   0xB013             ADD      SP,SP,#+76
+   \       0x78   0xBD30             POP      {R4,R5,PC}       ;; return
+    302          
+    303          /**
+    304            * @brief  Programmable Voltage Detector (PVD) Configuration
+    305            *         PVD set to level 6 for a threshold around 2.9V.
+    306            * @param  None
+    307            * @retval None
+    308            */
+
+   \                                 In section .text, align 2, keep-with-next
+    309          static void PVD_Config(void)
+    310          {
+   \                     PVD_Config: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+    311            PWR_PVDTypeDef sConfigPVD;
+    312            sConfigPVD.PVDLevel = PWR_PVDLEVEL_6;
+   \        0x2   0x206C             MOVS     R0,#+108
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+    313            sConfigPVD.Mode     = PWR_PVD_MODE_IT_RISING;
+   \        0x6   0x....             LDR      R0,??DataTable4_12  ;; 0x10001
+   \        0x8   0x9001             STR      R0,[SP, #+4]
+    314            if (HAL_PWR_ConfigPVD(&sConfigPVD) != HAL_OK) {Error_Handler();}
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x....'....        BL       HAL_PWR_ConfigPVD
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD001             BEQ      ??PVD_Config_0
+   \       0x14   0x....'....        BL       Error_Handler
+    315          
+    316            /* Enable PVD */
+    317            HAL_PWR_EnablePVD();
+   \                     ??PVD_Config_0: (+1)
+   \       0x18   0x....'....        BL       HAL_PWR_EnablePVD
+    318           
+    319            /* Enable and set PVD Interrupt priority */
+    320            HAL_NVIC_SetPriority(PVD_IRQn, 0, 0);
+   \       0x1C   0x2200             MOVS     R2,#+0
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0x....'....        BL       HAL_NVIC_SetPriority
+    321            HAL_NVIC_EnableIRQ(PVD_IRQn);
+   \       0x26   0x2001             MOVS     R0,#+1
+   \       0x28   0x....'....        BL       HAL_NVIC_EnableIRQ
+    322          }
+   \       0x2C   0xBD07             POP      {R0-R2,PC}       ;; return
+    323          
+    324          /**
+    325            * @brief  Configures EXTI line 13 (connected to PC.13 pin) in interrupt mode
+    326            * @param  None
+    327            * @retval None
+    328            */
+
+   \                                 In section .text, align 2, keep-with-next
+    329          static void EXTI13_IRQHandler_Config(void)
+    330          {
+   \                     EXTI13_IRQHandler_Config: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    331            GPIO_InitTypeDef GPIO_InitStructure;
+    332          
+    333            /* Enable GPIOC clock */
+    334            USER_BUTTON_GPIO_CLK_ENABLE();
+   \        0x4   0x2004             MOVS     R0,#+4
+   \        0x6   0x....             LDR      R1,??DataTable4_13  ;; 0x40021034
+   \        0x8   0x680A             LDR      R2,[R1, #+0]
+   \        0xA   0x4302             ORRS     R2,R2,R0
+   \        0xC   0x600A             STR      R2,[R1, #+0]
+   \        0xE   0x6809             LDR      R1,[R1, #+0]
+   \       0x10   0x4008             ANDS     R0,R0,R1
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+   \       0x14   0x9800             LDR      R0,[SP, #+0]
+    335          
+    336            /* Configure PC.13 pin as input floating */
+    337            GPIO_InitStructure.Mode = GPIO_MODE_IT_FALLING;
+   \       0x16   0x....             LDR      R0,??DataTable4_14  ;; 0x10210000
+   \       0x18   0x9002             STR      R0,[SP, #+8]
+    338            GPIO_InitStructure.Pull = GPIO_NOPULL;
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x9003             STR      R0,[SP, #+12]
+    339            GPIO_InitStructure.Pin = USER_BUTTON_EXTI_LINE;
+   \       0x1E   0x2080             MOVS     R0,#+128
+   \       0x20   0x0180             LSLS     R0,R0,#+6        ;; #+8192
+   \       0x22   0x9001             STR      R0,[SP, #+4]
+    340            HAL_GPIO_Init(USER_BUTTON_GPIO_PORT, &GPIO_InitStructure);
+   \       0x24   0xA901             ADD      R1,SP,#+4
+   \       0x26   0x....             LDR      R0,??DataTable4_15  ;; 0x50000800
+   \       0x28   0x....'....        BL       HAL_GPIO_Init
+    341          
+    342            /* Enable and set EXTI line 13 Interrupt to the lowest priority */
+    343            HAL_NVIC_SetPriority(USER_BUTTON_EXTI_IRQn, 2, 0);
+   \       0x2C   0x2200             MOVS     R2,#+0
+   \       0x2E   0x2102             MOVS     R1,#+2
+   \       0x30   0x2007             MOVS     R0,#+7
+   \       0x32   0x....'....        BL       HAL_NVIC_SetPriority
+    344            HAL_NVIC_EnableIRQ(USER_BUTTON_EXTI_IRQn);
+   \       0x36   0x2007             MOVS     R0,#+7
+   \       0x38   0x....'....        BL       HAL_NVIC_EnableIRQ
+    345          }
+   \       0x3C   0xB007             ADD      SP,SP,#+28
+   \       0x3E   0xBD00             POP      {PC}             ;; return
+    346          
+    347          /**
+    348            * @brief  This function is executed in case of error occurrence.
+    349            * @param  None
+    350            * @retval None
+    351            */
+
+   \                                 In section .text, align 2, keep-with-next
+    352          static void Error_Handler(void)
+    353          {
+   \                     Error_Handler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    354            while(1)
+    355            {
+    356              /* Toggle LED_KO (Red) fast */
+    357              BSP_LED_Toggle(LED_KO);
+   \                     ??Error_Handler_0: (+1)
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x....'....        BL       BSP_LED_Toggle
+    358              HAL_Delay(100);
+   \        0x8   0x2064             MOVS     R0,#+100
+   \        0xA   0x....'....        BL       HAL_Delay
+   \        0xE   0xE7F8             B        ??Error_Handler_0
+    359            }
+    360          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x4002'103C        DC32     0x4002103c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x4002'2018        DC32     0x40022018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x4000'7010        DC32     0x40007010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x4000'7018        DC32     0x40007018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x0001'0100        DC32     0x10100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x0001'0002        DC32     0x10002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x....'....        DC32     VarValue
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x....'....        DC32     Index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x....'....        DC32     ErasingOnGoing
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \        0x0   0x....'....        DC32     a_VarDataTab
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \        0x0   0x0000'0BB8        DC32     0xbb8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \        0x0   0x1FFF'75E0        DC32     0x1fff75e0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_12:
+   \        0x0   0x0001'0001        DC32     0x10001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_13:
+   \        0x0   0x4002'1034        DC32     0x40021034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_14:
+   \        0x0   0x1021'0000        DC32     0x10210000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_15:
+   \        0x0   0x5000'0800        DC32     0x50000800
+    361          
+    362          #ifdef  USE_FULL_ASSERT
+    363          /**
+    364            * @brief  Reports the name of the source file and the source line number
+    365            *         where the assert_param error has occurred.
+    366            * @param  file: pointer to the source file name
+    367            * @param  line: assert_param error line source number
+    368            * @retval None
+    369            */
+    370          void assert_failed(uint8_t *file, uint32_t line)
+    371          {
+    372            /* User can add his own implementation to report the file name and line number,
+    373               ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    374          
+    375            /* Infinite loop */
+    376            while (1)
+    377            {
+    378            }
+    379          }
+    380          #endif /* USE_FULL_ASSERT */
+    381          
+    382          /**
+    383            * @}
+    384            */
+    385          
+    386          /**
+    387            * @}
+    388            */
+    389          
+    390          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EE_EndOfCleanup_UserCallback
+      32   EXTI13_IRQHandler_Config
+        32   -> HAL_GPIO_Init
+        32   -> HAL_NVIC_EnableIRQ
+        32   -> HAL_NVIC_SetPriority
+       8   Error_Handler
+         8   -> BSP_LED_Toggle
+         8   -> HAL_Delay
+      24   HAL_FLASH_EndOfOperationCallback
+        24   -> EE_EndOfCleanup_UserCallback
+        24 __aeabi_uidivmod
+      16   PVD_Config
+        16   -> Error_Handler
+        16   -> HAL_NVIC_EnableIRQ
+        16   -> HAL_NVIC_SetPriority
+        16   -> HAL_PWR_ConfigPVD
+        16   -> HAL_PWR_EnablePVD
+      88   SystemClock_Config
+        88   -> Error_Handler
+        88   -> HAL_PWREx_ControlVoltageScaling
+        88   -> HAL_RCC_ClockConfig
+        88   -> HAL_RCC_OscConfig
+        88   -> memset
+      32   main
+        32   -> BSP_LED_Init
+        32   -> BSP_LED_Off
+        32   -> BSP_LED_On
+        32   -> BSP_LED_Toggle
+        32   -> EE_CleanUp_IT
+        32   -> EE_Init
+        32   -> EE_ReadVariable32bits
+        32   -> EE_WriteVariable32bits
+        32   -> EXTI13_IRQHandler_Config
+        32   -> Error_Handler
+        32   -> HAL_Delay
+        32   -> HAL_FLASH_Lock
+        32   -> HAL_FLASH_Unlock
+        32   -> HAL_Init
+        32   -> HAL_NVIC_EnableIRQ
+        32   -> HAL_NVIC_SetPriority
+        32   -> HAL_PWR_DisableWakeUpPin
+        32   -> HAL_PWR_EnableWakeUpPin
+        32   -> HAL_PWR_EnterSTANDBYMode
+        32   -> PVD_Config
+        32   -> SystemClock_Config
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_15
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+       8  EE_EndOfCleanup_UserCallback
+      64  EXTI13_IRQHandler_Config
+       4  ErasingOnGoing
+      16  Error_Handler
+      62  HAL_FLASH_EndOfOperationCallback
+       4  Index
+      46  PVD_Config
+     122  SystemClock_Config
+       4  VarValue
+   4'000  a_VarDataTab
+     468  main
+
+ 
+ 4'008 bytes in section .bss
+     4 bytes in section .data
+   850 bytes in section .text
+ 
+   850 bytes of CODE memory
+ 4'012 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,430 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.4.261/W32 for ARM                  09/Dec/2021  11:14:01
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Exe\Project.out
+#    Map file     =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List\Project.map
+#    Command line =
+#        -f C:\Users\dekaswum\AppData\Local\Temp\EW4321.tmp
+#        (D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\eeprom_emul.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\flash_interface.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\main.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\startup_stm32g071xx.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_cortex.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash_ex.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_gpio.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr_ex.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc_ex.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_it.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_nucleo.o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\system_stm32g0xx.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall
+#        --no_out_extension -o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Exe\Project.out
+#        --map
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List\Project.map
+#        --config
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\iar\linker\stm32g071xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x801'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'8fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xbc
+  .intvec            ro code   0x800'0000    0xbc  startup_stm32g071xx.o [1]
+                             - 0x800'00bc    0xbc
+
+"P1":                                      0x2f9c
+  .text              ro code   0x800'00bc  0x15e4  eeprom_emul.o [1]
+  .text              ro code   0x800'16a0    0xf0  flash_interface.o [1]
+  .text              ro code   0x800'1790    0xae  I32DivModFast.o [3]
+  .rodata            const     0x800'183e     0x2  stm32g0xx_nucleo.o [1]
+  Veneer             ro code   0x800'1840    0x10  - Linker created -
+  .text              ro code   0x800'1850   0x254  stm32g0xx_hal_flash.o [1]
+  .text              ro code   0x800'1aa4   0x130  stm32g0xx_hal_flash_ex.o [1]
+  .text              ro code   0x800'1bd4     0x2  IntDivZer.o [3]
+  .text              ro code   0x800'1bd6     0x2  stm32g0xx_hal_flash.o [1]
+  .text              ro code   0x800'1bd8   0x354  main.o [1]
+  .text              ro code   0x800'1f2c     0xc  stm32g0xx_hal.o [1]
+  .text              ro code   0x800'1f38    0x32  stm32g0xx_hal.o [1]
+  .text              ro code   0x800'1f6a     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'1f6c   0x11c  stm32g0xx_hal_cortex.o [1]
+  .text              ro code   0x800'2088    0xf0  stm32g0xx_hal_pwr.o [1]
+  .text              ro code   0x800'2178    0xc8  stm32g0xx_nucleo.o [1]
+  .text              ro code   0x800'2240    0x2c  stm32g0xx_hal.o [1]
+  .text              ro code   0x800'226c    0x14  memset.o [3]
+  .text              ro code   0x800'2280    0x58  stm32g0xx_hal_pwr_ex.o [1]
+  .text              ro code   0x800'22d8   0x754  stm32g0xx_hal_rcc.o [1]
+  .text              ro code   0x800'2a2c   0x286  stm32g0xx_hal_gpio.o [1]
+  .text              ro code   0x800'2cb2     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'2cb4    0x64  stm32g0xx_hal.o [1]
+  .text              ro code   0x800'2d18    0x4e  ABImemset.o [3]
+  .text              ro code   0x800'2d66     0x2  stm32g0xx_hal_gpio.o [1]
+  .text              ro code   0x800'2d68    0xdc  stm32g0xx_it.o [1]
+  .text              ro code   0x800'2e44    0x18  stm32g0xx_hal.o [1]
+  Initializer bytes  const     0x800'2e5c    0x5c  <for P2-1>
+  .rodata            const     0x800'2eb8    0x40  system_stm32g0xx.o [1]
+  .text              ro code   0x800'2ef8    0x3c  zero_init3.o [3]
+  .text              ro code   0x800'2f34    0x30  copy_init3.o [3]
+  .text              ro code   0x800'2f64    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'2f8c    0x24  - Linker created -
+  .text              ro code   0x800'2fb0    0x1e  cmain.o [3]
+  .text              ro code   0x800'2fce     0x4  low_level_init.o [2]
+  .text              ro code   0x800'2fd2     0x8  exit.o [2]
+  .text              ro code   0x800'2fda     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'2fdc     0xa  cexit.o [3]
+  .text              ro code   0x800'2fe6     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'2fe8    0x14  exit.o [4]
+  .text              ro code   0x800'2ffc    0x10  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'300c    0x10  system_stm32g0xx.o [1]
+  .text              ro code   0x800'301c     0xc  cstartup_M.o [3]
+  .text              ro code   0x800'3028     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'302a     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'302c     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'302e     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3030     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3032     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3034     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3036     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3038     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'303a     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'303c     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'303e     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3040     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3042     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3044     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3046     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3048     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'304a     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'304c     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'304e     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3050     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3052     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3054     0x2  startup_stm32g071xx.o [1]
+  .text              ro code   0x800'3056     0x2  startup_stm32g071xx.o [1]
+  .rodata            const     0x800'3058     0x0  zero_init3.o [3]
+  .rodata            const     0x800'3058     0x0  copy_init3.o [3]
+                             - 0x800'3058  0x2f9c
+
+"P2", part 1 of 3:                           0x5c
+  P2-1                        0x2000'0000    0x5c  <Init block>
+    .data            inited   0x2000'0000     0x4  eeprom_emul.o [1]
+    .data            inited   0x2000'0004     0x4  main.o [1]
+    .data            inited   0x2000'0008     0x4  stm32g0xx_hal.o [1]
+    .data            inited   0x2000'000c     0x4  stm32g0xx_hal.o [1]
+    .data            inited   0x2000'0010     0x4  stm32g0xx_nucleo.o [1]
+    .data            inited   0x2000'0014     0x4  system_stm32g0xx.o [1]
+    .textrw          inited   0x2000'0018    0x44  stm32g0xx_hal_flash.o [1]
+                            - 0x2000'005c    0x5c
+
+"P2", part 2 of 3:                          0xfcc
+  .bss               zero     0x2000'005c   0xfa0  main.o [1]
+  .bss               zero     0x2000'0ffc    0x18  stm32g0xx_hal_flash.o [1]
+  .bss               zero     0x2000'1014     0x4  eeprom_emul.o [1]
+  .bss               zero     0x2000'1018     0x4  main.o [1]
+  .bss               zero     0x2000'101c     0x4  main.o [1]
+  .bss               zero     0x2000'1020     0x4  stm32g0xx_hal.o [1]
+  .bss               zero     0x2000'1024     0x2  eeprom_emul.o [1]
+  .bss               zero     0x2000'1026     0x1  eeprom_emul.o [1]
+  .bss               zero     0x2000'1027     0x1  eeprom_emul.o [1]
+                            - 0x2000'1028   0xfcc
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'1028   0x400  <Block>
+    CSTACK           uninit   0x2000'1028   0x400  <Block tail>
+                            - 0x2000'1428   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'3058   0x801'ffff  0x1'cfa8
+  0x2000'1428  0x2000'8fff    0x7bd8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xfcc:
+          0x2000'005c  0xfcc
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x5c:
+           0x800'2e5c   0x5c
+    1 destination range, total size 0x5c:
+          0x2000'0000   0x5c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  rw code  ro data  rw data
+    ------                    -------  -------  -------  -------
+command line/config:
+    ------------------------------------------------------------
+    Total:
+
+D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj: [1]
+    eeprom_emul.o               5'604                 4       12
+    flash_interface.o             240
+    main.o                        852                 4    4'012
+    startup_stm32g071xx.o         260
+    stm32g0xx_hal.o               230                 8       12
+    stm32g0xx_hal_cortex.o        284
+    stm32g0xx_hal_flash.o         598       68       68       24
+    stm32g0xx_hal_flash_ex.o      304
+    stm32g0xx_hal_gpio.o          648
+    stm32g0xx_hal_pwr.o           240
+    stm32g0xx_hal_pwr_ex.o         88
+    stm32g0xx_hal_rcc.o         1'876
+    stm32g0xx_it.o                220
+    stm32g0xx_nucleo.o            200                 6        4
+    system_stm32g0xx.o             16                68        4
+    ------------------------------------------------------------
+    Total:                     11'660       68      158    4'068
+
+dl6M_tln.a: [2]
+    exit.o                          8
+    low_level_init.o                4
+    ------------------------------------------------------------
+    Total:                         12
+
+rt6M_tl.a: [3]
+    ABImemset.o                    78
+    I32DivModFast.o               174
+    IntDivZer.o                     2
+    cexit.o                        10
+    cmain.o                        30
+    copy_init3.o                   48
+    cstartup_M.o                   12
+    data_init.o                    40
+    memset.o                       20
+    zero_init3.o                   60
+    ------------------------------------------------------------
+    Total:                        474
+
+shb_l.a: [4]
+    exit.o                         20
+    ------------------------------------------------------------
+    Total:                         20
+
+    Linker created                 16                36    1'024
+----------------------------------------------------------------
+    Grand Total:               12'182       68      194    5'092
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'2f8c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'2fb0          --   Gb  - Linker created -
+?main                    0x800'2fb1         Code  Gb  cmain.o [3]
+AHBPrescTable            0x800'2eb8   0x40  Data  Gb  system_stm32g0xx.o [1]
+AddressRead             0x2000'1014    0x4  Data  Gb  eeprom_emul.o [1]
+BSP_LED_Init             0x800'2179   0x50  Code  Gb  stm32g0xx_nucleo.o [1]
+BSP_LED_Off              0x800'21ed   0x24  Code  Gb  stm32g0xx_nucleo.o [1]
+BSP_LED_On               0x800'21c9   0x24  Code  Gb  stm32g0xx_nucleo.o [1]
+BSP_LED_Toggle           0x800'2211   0x22  Code  Gb  stm32g0xx_nucleo.o [1]
+CSTACK$$Base            0x2000'1028          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1428          --   Gb  - Linker created -
+CalculateCrc             0x800'163f   0x28  Code  Gb  eeprom_emul.o [1]
+CleanupPhase            0x2000'1027    0x1  Data  Gb  eeprom_emul.o [1]
+ConfigureCrc             0x800'1621   0x1e  Code  Gb  eeprom_emul.o [1]
+EE_CleanUp               0x800'0a5d   0xf6  Code  Gb  eeprom_emul.o [1]
+EE_CleanUp_IT            0x800'0b59   0xf6  Code  Gb  eeprom_emul.o [1]
+EE_DeleteCorruptedFlashAddress
+                         0x800'0c55    0xc  Code  Gb  eeprom_emul.o [1]
+EE_EndOfCleanup_UserCallback
+                         0x800'1deb    0x8  Code  Gb  main.o [1]
+EE_Format                0x800'0905   0xe6  Code  Gb  eeprom_emul.o [1]
+EE_Init                  0x800'0101  0x804  Code  Gb  eeprom_emul.o [1]
+EE_ReadVariable32bits    0x800'09f5   0x32  Code  Gb  eeprom_emul.o [1]
+EE_WriteVariable32bits   0x800'0a35   0x28  Code  Gb  eeprom_emul.o [1]
+EXTI13_IRQHandler_Config
+                         0x800'1e9b   0x40  Code  Lc  main.o [1]
+EXTI4_15_IRQHandler      0x800'2e39    0xc  Code  Gb  stm32g0xx_it.o [1]
+ErasingOnGoing          0x2000'1018    0x4  Data  Gb  main.o [1]
+Error_Handler            0x800'1f1d   0x10  Code  Lc  main.o [1]
+FI_CacheFlush            0x800'1711    0x2  Code  Gb  flash_interface.o [1]
+FI_CheckBankConfig       0x800'178d    0x4  Code  Gb  flash_interface.o [1]
+FI_DeleteCorruptedFlashAddress
+                         0x800'1713   0x6c  Code  Gb  flash_interface.o [1]
+FI_PageErase             0x800'16b7   0x30  Code  Gb  flash_interface.o [1]
+FI_PageErase_IT          0x800'16e7   0x2a  Code  Gb  flash_interface.o [1]
+FI_WriteDoubleWord       0x800'16a1   0x16  Code  Gb  flash_interface.o [1]
+FLASH_IRQHandler         0x800'2deb   0x26  Code  Gb  stm32g0xx_it.o [1]
+FLASH_MassErase          0x800'1b9b    0xc  Code  Lc  stm32g0xx_hal_flash_ex.o [1]
+FLASH_PageErase          0x800'1ba7   0x18  Code  Gb  stm32g0xx_hal_flash_ex.o [1]
+FLASH_Program_DoubleWord
+                         0x800'1a55   0x1e  Code  Lc  stm32g0xx_hal_flash.o [1]
+FLASH_Program_Fast      0x2000'0019   0x44  Code  Lc  stm32g0xx_hal_flash.o [1]
+FLASH_WaitForLastOperation
+                         0x800'19e1   0x74  Code  Gb  stm32g0xx_hal_flash.o [1]
+FindPage                 0x800'0e1d  0x1de  Code  Lc  eeprom_emul.o [1]
+GetPageState             0x800'1581   0xa0  Code  Lc  eeprom_emul.o [1]
+HAL_Delay                0x800'2241   0x2c  Code  Wk  stm32g0xx_hal.o [1]
+HAL_FLASHEx_Erase        0x800'1aa5   0x96  Code  Gb  stm32g0xx_hal_flash_ex.o [1]
+HAL_FLASHEx_Erase_IT     0x800'1b3b   0x60  Code  Gb  stm32g0xx_hal_flash_ex.o [1]
+HAL_FLASH_EndOfOperationCallback
+                         0x800'1dad   0x3e  Code  Gb  main.o [1]
+HAL_FLASH_IRQHandler     0x800'18bb   0xe0  Code  Gb  stm32g0xx_hal_flash.o [1]
+HAL_FLASH_Lock           0x800'19bf   0x1e  Code  Gb  stm32g0xx_hal_flash.o [1]
+HAL_FLASH_Program        0x800'1851   0x6a  Code  Gb  stm32g0xx_hal_flash.o [1]
+HAL_FLASH_Unlock         0x800'199b   0x24  Code  Gb  stm32g0xx_hal_flash.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'2c4b   0x3e  Code  Gb  stm32g0xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'2a2d  0x1e6  Code  Gb  stm32g0xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin       0x800'2c2d   0x1e  Code  Gb  stm32g0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'2c13   0x1a  Code  Gb  stm32g0xx_hal_gpio.o [1]
+HAL_GetTick              0x800'1f2d    0xc  Code  Wk  stm32g0xx_hal.o [1]
+HAL_IncTick              0x800'2e45   0x18  Code  Wk  stm32g0xx_hal.o [1]
+HAL_Init                 0x800'1f39   0x2a  Code  Gb  stm32g0xx_hal.o [1]
+HAL_InitTick             0x800'2cb5   0x64  Code  Wk  stm32g0xx_hal.o [1]
+HAL_NVIC_EnableIRQ       0x800'2057    0xe  Code  Gb  stm32g0xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'2043   0x14  Code  Gb  stm32g0xx_hal_cortex.o [1]
+HAL_PWREx_ControlVoltageScaling
+                         0x800'2281   0x42  Code  Gb  stm32g0xx_hal_pwr_ex.o [1]
+HAL_PWR_ConfigPVD        0x800'2089   0x6e  Code  Gb  stm32g0xx_hal_pwr.o [1]
+HAL_PWR_DisableWakeUpPin
+                         0x800'2125    0xe  Code  Gb  stm32g0xx_hal_pwr.o [1]
+HAL_PWR_EnablePVD        0x800'20f7    0xc  Code  Gb  stm32g0xx_hal_pwr.o [1]
+HAL_PWR_EnableWakeUpPin
+                         0x800'2103   0x22  Code  Gb  stm32g0xx_hal_pwr.o [1]
+HAL_PWR_EnterSTANDBYMode
+                         0x800'2133   0x1c  Code  Gb  stm32g0xx_hal_pwr.o [1]
+HAL_RCC_ClockConfig      0x800'27b9  0x17c  Code  Gb  stm32g0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'2941   0xb4  Code  Gb  stm32g0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'22d9  0x4ba  Code  Gb  stm32g0xx_hal_rcc.o [1]
+HAL_SYSTICK_Config       0x800'2065    0xc  Code  Gb  stm32g0xx_hal_cortex.o [1]
+HardFault_Handler        0x800'2ddb    0x4  Code  Gb  stm32g0xx_it.o [1]
+Index                   0x2000'0004    0x4  Data  Gb  main.o [1]
+LED_PIN                  0x800'183e    0x2  Data  Gb  stm32g0xx_nucleo.o [1]
+LED_PORT                0x2000'0010    0x4  Data  Gb  stm32g0xx_nucleo.o [1]
+LL_AHB1_GRP1_EnableClock
+                         0x800'00e7   0x16  Code  Lc  eeprom_emul.o [1]
+LL_CRC_FeedData16        0x800'00db    0x6  Code  Lc  eeprom_emul.o [1]
+LL_CRC_FeedData32        0x800'00d7    0x4  Code  Lc  eeprom_emul.o [1]
+LL_CRC_ReadData16        0x800'00e1    0x6  Code  Lc  eeprom_emul.o [1]
+LL_CRC_ResetCRCCalculationUnit
+                         0x800'00bd    0xa  Code  Lc  eeprom_emul.o [1]
+LL_CRC_SetPolynomialCoef
+                         0x800'00d3    0x4  Code  Lc  eeprom_emul.o [1]
+LL_CRC_SetPolynomialSize
+                         0x800'00c7    0xc  Code  Lc  eeprom_emul.o [1]
+NMI_Handler              0x800'2d69   0x72  Code  Gb  stm32g0xx_it.o [1]
+PVD_Config               0x800'1e6d   0x2e  Code  Lc  main.o [1]
+PVD_IRQHandler           0x800'2e11    0xc  Code  Gb  stm32g0xx_it.o [1]
+PagesTransfer            0x800'1011  0x384  Code  Lc  eeprom_emul.o [1]
+PendSV_Handler           0x800'2de1    0x2  Code  Gb  stm32g0xx_it.o [1]
+ReadVariable             0x800'0c61  0x15c  Code  Lc  eeprom_emul.o [1]
+Region$$Table$$Base      0x800'2f8c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'2fb0          --   Gb  - Linker created -
+SVC_Handler              0x800'2ddf    0x2  Code  Gb  stm32g0xx_it.o [1]
+SetPageState             0x800'1459  0x124  Code  Lc  eeprom_emul.o [1]
+SysTick_Config           0x800'2011   0x32  Code  Lc  stm32g0xx_hal_cortex.o [1]
+SysTick_Handler          0x800'2de3    0x8  Code  Gb  stm32g0xx_it.o [1]
+SystemClock_Config       0x800'1df3   0x7a  Code  Lc  main.o [1]
+SystemCoreClock         0x2000'0014    0x4  Data  Gb  system_stm32g0xx.o [1]
+SystemInit               0x800'300d    0xa  Code  Gb  system_stm32g0xx.o [1]
+VarValue                0x2000'101c    0x4  Data  Gb  main.o [1]
+VerifyPageFullyErased    0x800'0ded   0x2c  Code  Lc  eeprom_emul.o [1]
+VerifyPagesFullWriteVariable
+                         0x800'13a5   0xaa  Code  Lc  eeprom_emul.o [1]
+WriteVariable            0x800'0dbd   0x30  Code  Lc  eeprom_emul.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'8fff         Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+__NVIC_EnableIRQ         0x800'1f6d   0x18  Code  Lc  stm32g0xx_hal_cortex.o [1]
+__NVIC_SetPriority       0x800'1f85   0x8c  Code  Lc  stm32g0xx_hal_cortex.o [1]
+__aeabi_idiv0            0x800'1bd5         Code  Gb  IntDivZer.o [3]
+__aeabi_memset           0x800'2d19         Code  Gb  ABImemset.o [3]
+__aeabi_uidiv            0x800'1791         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'1791         Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'2fb1         Code  Gb  cmain.o [3]
+__exit                   0x800'2fe9   0x14  Code  Gb  exit.o [4]
+__iar_Memset4_word       0x800'2d39         Code  Gb  ABImemset.o [3]
+__iar_Memset_word        0x800'2d25         Code  Gb  ABImemset.o [3]
+__iar_copy_init3         0x800'2f35   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'2f65   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'301d         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'2ef9   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'2fcf    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32g071xx.o [1]
+_call_main               0x800'2fbd         Code  Gb  cmain.o [3]
+_exit                    0x800'2fdd         Code  Gb  cexit.o [3]
+_main                    0x800'2fcb         Code  Gb  cmain.o [3]
+a_VarDataTab            0x2000'005c  0xfa0  Data  Gb  main.o [1]
+exit                     0x800'2fd3    0x8  Code  Gb  exit.o [2]
+main                     0x800'1bd9  0x1d4  Code  Gb  main.o [1]
+memset                   0x800'226d   0x14  Code  Gb  memset.o [3]
+pFlash                  0x2000'0ffc   0x18  Data  Gb  stm32g0xx_hal_flash.o [1]
+ubCurrentActivePage     0x2000'1026    0x1  Data  Gb  eeprom_emul.o [1]
+uhNbWrittenElements     0x2000'1024    0x2  Data  Gb  eeprom_emul.o [1]
+uwAddressNextWrite      0x2000'0000    0x4  Data  Gb  eeprom_emul.o [1]
+uwTick                  0x2000'1020    0x4  Data  Gb  stm32g0xx_hal.o [1]
+uwTickFreq              0x2000'000c    0x4  Data  Gb  stm32g0xx_hal.o [1]
+uwTickPrio              0x2000'0008    0x4  Data  Gb  stm32g0xx_hal.o [1]
+
+
+[1] = D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  12'182 bytes of readonly  code memory
+      68 bytes of readwrite code memory
+     194 bytes of readonly  data memory
+   5'092 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

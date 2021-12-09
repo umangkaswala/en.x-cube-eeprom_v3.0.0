@@ -142,13 +142,14 @@ int main(void)
   }
   
   /* Store 10 values of all variables in EEPROM, ascending order */
-  for (VarValue = 1; VarValue <= 10; VarValue++)
+  for (VarValue = 1; VarValue <= 1; VarValue++)
   {
-    for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
+    for (Index = 1; Index < 1+1; Index++)
     {
       /* Wait any cleanup is completed before accessing flash again */
       while (ErasingOnGoing == 1) { }
       
+      ee_status = EE_WriteVariable32bits(Index, Index*VarValue);
       ee_status = EE_WriteVariable32bits(Index, Index*VarValue);
       ee_status|= EE_ReadVariable32bits(Index, &a_VarDataTab[Index-1]);
       if (Index*VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
@@ -159,47 +160,47 @@ int main(void)
     }
   }
 
-  /* Read all the variables */
-  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
-  {
-    ee_status = EE_ReadVariable32bits(Index, &VarValue);
-    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
-    if (ee_status != EE_OK) {Error_Handler();}
-  }
-
-  /* Store 1000 values of Variable1,2,3 in EEPROM */
-  for (VarValue = 1; VarValue <= 1000; VarValue++)
-  {
-    while (ErasingOnGoing == 1) { }
-
-    ee_status = EE_WriteVariable32bits(1, VarValue);
-    ee_status|= EE_ReadVariable32bits(1, &a_VarDataTab[0]);
-    if (VarValue != a_VarDataTab[0]) {Error_Handler();}
-
-    ee_status|= EE_WriteVariable32bits(2, ~VarValue);
-    ee_status|= EE_ReadVariable32bits(2, &a_VarDataTab[1]);
-    if (~VarValue != a_VarDataTab[1]) {Error_Handler();}
-
-    ee_status|= EE_WriteVariable32bits(3, VarValue << 1);
-    ee_status|= EE_ReadVariable32bits(3, &a_VarDataTab[2]);
-    if ((VarValue << 1) != a_VarDataTab[2]) {Error_Handler();}
-
-    /* Start cleanup polling mode, if cleanup is needed */
-    if ((ee_status & EE_STATUSMASK_CLEANUP) == EE_STATUSMASK_CLEANUP) {ErasingOnGoing = 0;ee_status|= EE_CleanUp();}
-    if ((ee_status & EE_STATUSMASK_ERROR) == EE_STATUSMASK_ERROR) {Error_Handler();}
-  }
-
-  /* Read all the variables */
-  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
-  {
-    ee_status = EE_ReadVariable32bits(Index, &VarValue);
-    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
-    if (ee_status != EE_OK) {Error_Handler();}
-  }
+//  /* Read all the variables */
+//  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
+//  {
+//    ee_status = EE_ReadVariable32bits(Index, &VarValue);
+//    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
+//    if (ee_status != EE_OK) {Error_Handler();}
+//  }
+//
+//  /* Store 1000 values of Variable1,2,3 in EEPROM */
+//  for (VarValue = 1; VarValue <= 1000; VarValue++)
+//  {
+//    while (ErasingOnGoing == 1) { }
+//
+//    ee_status = EE_WriteVariable32bits(1, VarValue);
+//    ee_status|= EE_ReadVariable32bits(1, &a_VarDataTab[0]);
+//    if (VarValue != a_VarDataTab[0]) {Error_Handler();}
+//
+//    ee_status|= EE_WriteVariable32bits(2, ~VarValue);
+//    ee_status|= EE_ReadVariable32bits(2, &a_VarDataTab[1]);
+//    if (~VarValue != a_VarDataTab[1]) {Error_Handler();}
+//
+//    ee_status|= EE_WriteVariable32bits(3, VarValue << 1);
+//    ee_status|= EE_ReadVariable32bits(3, &a_VarDataTab[2]);
+//    if ((VarValue << 1) != a_VarDataTab[2]) {Error_Handler();}
+//
+//    /* Start cleanup polling mode, if cleanup is needed */
+//    if ((ee_status & EE_STATUSMASK_CLEANUP) == EE_STATUSMASK_CLEANUP) {ErasingOnGoing = 0;ee_status|= EE_CleanUp();}
+//    if ((ee_status & EE_STATUSMASK_ERROR) == EE_STATUSMASK_ERROR) {Error_Handler();}
+//  }
+//
+//  /* Read all the variables */
+//  for (Index = 1; Index < NB_OF_VARIABLES+1; Index++)
+//  {
+//    ee_status = EE_ReadVariable32bits(Index, &VarValue);
+//    if (VarValue != a_VarDataTab[Index-1]) {Error_Handler();}
+//    if (ee_status != EE_OK) {Error_Handler();}
+//  }
 
   /* Test is completed successfully */
   /* Lock the Flash Program Erase controller */
-  HAL_FLASH_Lock();
+//  HAL_FLASH_Lock();
   
   while (1)
   {

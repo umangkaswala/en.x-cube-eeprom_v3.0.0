@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>934631744</fileChecksum>
+    <configuration>
+        <name>NUCLEO-G071RB</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c</file>
+            <file>$PROJ_DIR$\..\..\Src\system_stm32g0xx.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c</file>
+            <file>$PROJ_DIR$\..\..\Src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c</file>
+            <file>$PROJ_DIR$\..\..\Src\stm32g0xx_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\iar\startup_stm32g071xx.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\stm32g0xx_nucleo.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\eeprom_emul.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c</file>
+            <file>$PROJ_DIR$\..\..\readme.txt</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash_ex.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr_ex.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_it.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\eeprom_emul.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\flash_interface.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\startup_stm32g071xx.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_nucleo.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_cortex.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_gpio.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc_ex.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\main.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\system_stm32g0xx.o</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr_ex.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Exe\NUCLEO-G071RB.hex</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Exe\Project.out</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\system_stm32g0xx.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\Project.pbd</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_nucleo.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\eeprom_emul.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash_ex.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\flash_interface.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc_ex.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_cortex.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_gpio.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_it.xcl</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_rcc_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\eeprom_emul.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\flash_interface.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\main.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\main.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\main.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\system_stm32g0xx.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_cortex.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_nucleo.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_pwr_ex.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_it.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal_flash.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\stm32g0xx_hal.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_cortex.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_cortex.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_cortex.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\flash_interface.i</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_crc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_bus.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\eeprom_emul_conf.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\flash_interface.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc_ex.i</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc_ex.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\flash_interface.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_rcc_ex.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\eeprom_emul_types.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\eeprom_emul.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\eeprom_emul.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\eeprom_emul.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\eeprom_emul.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash_ex.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash_ex.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash_ex.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr_ex.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr_ex.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr_ex.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_gpio.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_gpio.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_it.i</file>
+            <file>$PROJ_DIR$\..\..\Inc\main.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_gpio.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\stm32g0xx_nucleo.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\stm32g0xx_it.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\Inc\stm32g0xx_hal_conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g071xx.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_ll_rcc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc_ex.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm0plus.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_gpio_ex.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_dma_ex.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_cortex.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_exti.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_flash_ex.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\system_stm32g0xx.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr.s</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_flash.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr_ex.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_pwr.h</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_hal_pwr.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\system_stm32g0xx.i</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\system_stm32g0xx.lst</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_it.s</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\Project.map</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_nucleo.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_it.lst</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_nucleo.i</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\iar\linker\stm32g071xx_flash.icf</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\NUCLEO-G071RB\List\stm32g0xx_nucleo.s</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 35 152</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74 75 72 21</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\system_stm32g0xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 147 139 148 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 138 108 132 120 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 73 70 27</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 146 141 144 24</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55 56 57 31</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143 105 87 79 86 82 77 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 140 142 28</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 67</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Src\stm32g0xx_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102 150 154 19</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143 105 87 79 86 82 77 78 106</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 96 94 18</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\iar\startup_stm32g071xx.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\stm32g0xx_nucleo.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 155 159 153 26</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81 83 85 30</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 100 104 29</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\eeprom_emul.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 88 89 90 22</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 79 86 82 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143 77 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76 80 84 23</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 79 86 82 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143 77 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97 99 95 20</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 68</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 108 132 120 110 114 125 123 128 107 126 109 111 112 118 134 113 115 127 116 117 119 121 122 124 129 130 131 133 135 136 137 145 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\NUCLEO-G071RB\Exe\Project.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 152</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 156 22 23 31 25 20 27 28 17 29 24 18 21 30 19 26 32 149 157 158 151</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+</project>

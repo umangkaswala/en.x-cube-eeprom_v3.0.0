@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armstlink2.dll" 
+
+"D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Exe\Project.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\ST\STM32G0xx.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\flashloader\ST\FlashSTM32G08xxB.board" 
+
+
+
+

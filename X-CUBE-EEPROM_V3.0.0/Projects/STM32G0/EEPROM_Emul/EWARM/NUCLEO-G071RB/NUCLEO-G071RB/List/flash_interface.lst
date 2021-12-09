@@ -1,0 +1,500 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.4.261/W32 for ARM         09/Dec/2021  10:22:16
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.c
+#    Command line      =
+#        -f C:\Users\dekaswum\AppData\Local\Temp\EWE107.tmp
+#        (D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.c
+#        -D USE_HAL_DRIVER -D STM32G071xx --preprocess=s
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lC
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lA
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\\
+#        -On --use_c++_inline --require_prototypes -I "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\\" -I
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\CMSIS\DSP\Include\\")
+#    Locale            =  C
+#    List file         =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List\flash_interface.lst
+#    Object file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\flash_interface.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\flash_interface.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    EEPROM_Emul/Porting/STM32G0/flash_interface.c
+      4            * @author  MCD Application Team
+      5            * @brief   This file provides all the EEPROM emulation flash interface functions.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          
+     20          /* Includes ------------------------------------------------------------------*/
+     21          #include "eeprom_emul.h"
+     22          #include "flash_interface.h"
+     23          
+     24          /** @addtogroup EEPROM_Emulation
+     25            * @{
+     26            */
+     27          
+     28          /* Private typedef -----------------------------------------------------------*/
+     29          /* Private constants ---------------------------------------------------------*/
+     30          /* Private macro -------------------------------------------------------------*/
+     31          /* Private variables ---------------------------------------------------------*/
+     32          /* Private function prototypes -----------------------------------------------*/
+     33          #ifdef FLASH_BANK_2
+     34          static uint32_t GetBankNumber(uint32_t Address);
+     35          #endif
+     36          
+     37          /* Exported functions --------------------------------------------------------*/
+     38          /* Private functions ---------------------------------------------------------*/
+     39          /** @addtogroup EEPROM_Private_Functions
+     40            * @{
+     41            */
+     42          
+     43          /**
+     44            * @brief  Write a double word at the given address in Flash
+     45            * @param  Address Where to write
+     46            * @param  Data What to write
+     47            * @retval EE_Status
+     48            *           - EE_OK: on success
+     49            *           - EE_WRITE_ERROR: if an error occurs
+     50            */
+
+   \                                 In section .text, align 2, keep-with-next
+     51          HAL_StatusTypeDef FI_WriteDoubleWord(uint32_t Address, uint64_t Data)
+     52          {
+   \                     FI_WriteDoubleWord: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x0014             MOVS     R4,R2
+   \        0x6   0x001D             MOVS     R5,R3
+     53            return HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, Address, Data); 
+   \        0x8   0x0022             MOVS     R2,R4
+   \        0xA   0x002B             MOVS     R3,R5
+   \        0xC   0x0031             MOVS     R1,R6
+   \        0xE   0x2001             MOVS     R0,#+1
+   \       0x10   0x....'....        BL       HAL_FLASH_Program
+   \       0x14   0xBD70             POP      {R4-R6,PC}       ;; return
+     54          }
+     55          
+     56          /**
+     57            * @brief  Erase a page in polling mode
+     58            * @param  Page Page number
+     59            * @param  NbPages Number of pages to erase
+     60            * @retval EE_Status
+     61            *           - EE_OK: on success
+     62            *           - EE error code: if an error occurs
+     63            */
+
+   \                                 In section .text, align 2, keep-with-next
+     64          EE_Status FI_PageErase(uint32_t Page, uint16_t NbPages)
+     65          {
+   \                     FI_PageErase: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     66            EE_Status status = EE_OK;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x0005             MOVS     R5,R0
+     67            FLASH_EraseInitTypeDef s_eraseinit;
+     68            uint32_t page_error = 0U;
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+     69          
+     70          #ifdef FLASH_BANK_2
+     71            uint32_t bank = GetBankNumber(PAGE_ADDRESS(Page));
+     72            s_eraseinit.Banks       = bank;
+     73          #endif  
+     74            
+     75            s_eraseinit.TypeErase   = FLASH_TYPEERASE_PAGES;
+   \        0xC   0x2002             MOVS     R0,#+2
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+     76            s_eraseinit.NbPages     = NbPages;
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0xB280             UXTH     R0,R0
+   \       0x14   0x9003             STR      R0,[SP, #+12]
+     77            s_eraseinit.Page        = Page;
+   \       0x16   0x9602             STR      R6,[SP, #+8]
+     78          
+     79            /* Erase the Page: Set Page status to ERASED status */
+     80            if (HAL_FLASHEx_Erase(&s_eraseinit, &page_error) != HAL_OK)
+   \       0x18   0x4669             MOV      R1,SP
+   \       0x1A   0xA801             ADD      R0,SP,#+4
+   \       0x1C   0x....'....        BL       HAL_FLASHEx_Erase
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD001             BEQ      ??FI_PageErase_0
+     81            {
+     82              status = EE_ERASE_ERROR;
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x0005             MOVS     R5,R0
+     83            }
+     84            return status;
+   \                     ??FI_PageErase_0: (+1)
+   \       0x28   0x0028             MOVS     R0,R5
+   \       0x2A   0xB200             SXTH     R0,R0
+   \       0x2C   0xB004             ADD      SP,SP,#+16
+   \       0x2E   0xBD70             POP      {R4-R6,PC}       ;; return
+     85          }
+     86          
+     87          /**
+     88            * @brief  Erase a page with interrupt enabled
+     89            * @param  Page Page number
+     90            * @param  NbPages Number of pages to erase
+     91            * @retval EE_Status
+     92            *           - EE_OK: on success
+     93            *           - EE error code: if an error occurs
+     94            */
+
+   \                                 In section .text, align 2, keep-with-next
+     95          EE_Status FI_PageErase_IT(uint32_t Page, uint16_t NbPages)
+     96          {
+   \                     FI_PageErase_IT: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     97            EE_Status status = EE_OK;
+   \        0x6   0x2600             MOVS     R6,#+0
+     98            FLASH_EraseInitTypeDef s_eraseinit;
+     99            
+    100          #ifdef FLASH_BANK_2
+    101            uint32_t bank = GetBankNumber(PAGE_ADDRESS(Page));
+    102            s_eraseinit.Banks       = bank;
+    103          #endif
+    104            
+    105            s_eraseinit.TypeErase   = FLASH_TYPEERASE_PAGES;
+   \        0x8   0x2002             MOVS     R0,#+2
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+    106            s_eraseinit.NbPages     = NbPages;
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0xB280             UXTH     R0,R0
+   \       0x10   0x9002             STR      R0,[SP, #+8]
+    107            s_eraseinit.Page        = Page;
+   \       0x12   0x9501             STR      R5,[SP, #+4]
+    108          
+    109            /* Erase the Page: Set Page status to ERASED status */
+    110            if (HAL_FLASHEx_Erase_IT(&s_eraseinit) != HAL_OK)
+   \       0x14   0x4668             MOV      R0,SP
+   \       0x16   0x....'....        BL       HAL_FLASHEx_Erase_IT
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD001             BEQ      ??FI_PageErase_IT_0
+    111            {
+    112              status = EE_ERASE_ERROR;
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0x0006             MOVS     R6,R0
+    113            }
+    114            return status;
+   \                     ??FI_PageErase_IT_0: (+1)
+   \       0x22   0x0030             MOVS     R0,R6
+   \       0x24   0xB200             SXTH     R0,R0
+   \       0x26   0xB004             ADD      SP,SP,#+16
+   \       0x28   0xBD70             POP      {R4-R6,PC}       ;; return
+    115          }
+    116          
+    117          /**
+    118            * @brief  Flush the caches if needed to keep coherency when the flash content is modified
+    119            */
+
+   \                                 In section .text, align 2, keep-with-next
+    120          void FI_CacheFlush()
+    121          {
+    122            /* No flush needed. There is no D-Cache for the STM32G0x0 and STM32G0x1 products. */
+    123            return;
+   \                     FI_CacheFlush: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    124          }
+    125          
+    126          #ifdef FLASH_BANK_2
+    127          /**
+    128            * @brief  Gets the bank of a given address
+    129            * @param  Address Address of the FLASH Memory
+    130            * @retval Bank_Number The bank of a given address
+    131            */
+    132          static uint32_t GetBankNumber(uint32_t Address)
+    133          {
+    134            uint32_t bank = 0U;
+    135          
+    136            if (OB_USER_DUALBANK_SWAP_DISABLE)
+    137            {
+    138              /* No Bank swap */
+    139              if (Address < (FLASH_BASE + FLASH_BANK_SIZE))
+    140              {
+    141                bank = FLASH_BANK_1;
+    142              }
+    143              else
+    144              {
+    145                bank = FLASH_BANK_2;
+    146              }
+    147            }
+    148            else
+    149            {
+    150              /* Bank swap */
+    151              if (Address < (FLASH_BASE + FLASH_BANK_SIZE))
+    152              {
+    153                bank = FLASH_BANK_2;
+    154              }
+    155              else
+    156              {
+    157                bank = FLASH_BANK_1;
+    158              }
+    159            }
+    160          
+    161            return bank;
+    162          }
+    163          #endif
+    164          
+    165          /**
+    166            * @brief  Delete corrupted Flash address, can be called from NMI. No Timeout.
+    167            * @param  Address Address of the FLASH Memory to delete
+    168            * @retval EE_Status
+    169            *           - EE_OK: on success
+    170            *           - EE error code: if an error occurs
+    171            */
+
+   \                                 In section .text, align 2, keep-with-next
+    172          EE_Status FI_DeleteCorruptedFlashAddress(uint32_t Address)
+    173          {
+   \                     FI_DeleteCorruptedFlashAddress: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    174            EE_Status status = EE_OK;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x0028             MOVS     R0,R5
+    175          
+    176            /* Set FLASH Programmation bit */
+    177            SET_BIT(FLASH->CR, FLASH_CR_PG);
+   \        0x8   0x2301             MOVS     R3,#+1
+   \        0xA   0x....             LDR      R4,??DataTable1  ;; 0x40022014
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x4319             ORRS     R1,R1,R3
+   \       0x10   0x6021             STR      R1,[R4, #+0]
+    178          
+    179            /* Program double word of value 0 */
+    180            *(__IO uint32_t*)(Address) = (uint32_t)0U;
+   \       0x12   0x6015             STR      R5,[R2, #+0]
+    181            *(__IO uint32_t*)(Address+4U) = (uint32_t)0U;
+   \       0x14   0x0011             MOVS     R1,R2
+   \       0x16   0x1D09             ADDS     R1,R1,#+4
+   \       0x18   0x600D             STR      R5,[R1, #+0]
+    182          
+    183            /* Wait programmation completion */
+    184          #if defined(FLASH_DBANK_SUPPORT)
+    185            uint32_t bank = GetBankNumber(Address);
+    186            if(bank == FLASH_BANK_1)
+    187            {
+    188              while(FLASH->SR & FLASH_SR_BSY1)
+    189              {
+    190              }
+    191            }
+    192            else
+    193            {
+    194              while(FLASH->SR & FLASH_SR_BSY2)
+    195              {
+    196              }
+    197            }
+    198          #else  
+    199            while(FLASH->SR & FLASH_SR_BSY1)
+   \                     ??FI_DeleteCorruptedFlashAddress_0: (+1)
+   \       0x1A   0x....             LDR      R1,??DataTable1_1  ;; 0x40022010
+   \       0x1C   0x680D             LDR      R5,[R1, #+0]
+   \       0x1E   0x03ED             LSLS     R5,R5,#+15
+   \       0x20   0xD4FB             BMI      ??FI_DeleteCorruptedFlashAddress_0
+    200            {
+    201            }
+    202          #endif
+    203            
+    204            /* Check if error occured */
+    205            if((FLASH->SR & FLASH_SR_OPERR)  || (FLASH->SR & FLASH_SR_PROGERR) ||
+    206               (FLASH->SR & FLASH_SR_WRPERR) || (FLASH->SR & FLASH_SR_PGAERR)  ||
+    207               (FLASH->SR & FLASH_SR_SIZERR) || (FLASH->SR & FLASH_SR_PGSERR))
+   \       0x22   0x680D             LDR      R5,[R1, #+0]
+   \       0x24   0x07AD             LSLS     R5,R5,#+30
+   \       0x26   0xD40E             BMI      ??FI_DeleteCorruptedFlashAddress_1
+   \       0x28   0x680D             LDR      R5,[R1, #+0]
+   \       0x2A   0x072D             LSLS     R5,R5,#+28
+   \       0x2C   0xD40B             BMI      ??FI_DeleteCorruptedFlashAddress_1
+   \       0x2E   0x680D             LDR      R5,[R1, #+0]
+   \       0x30   0x06ED             LSLS     R5,R5,#+27
+   \       0x32   0xD408             BMI      ??FI_DeleteCorruptedFlashAddress_1
+   \       0x34   0x680D             LDR      R5,[R1, #+0]
+   \       0x36   0x06AD             LSLS     R5,R5,#+26
+   \       0x38   0xD405             BMI      ??FI_DeleteCorruptedFlashAddress_1
+   \       0x3A   0x680D             LDR      R5,[R1, #+0]
+   \       0x3C   0x066D             LSLS     R5,R5,#+25
+   \       0x3E   0xD402             BMI      ??FI_DeleteCorruptedFlashAddress_1
+   \       0x40   0x680D             LDR      R5,[R1, #+0]
+   \       0x42   0x062D             LSLS     R5,R5,#+24
+   \       0x44   0xD501             BPL      ??FI_DeleteCorruptedFlashAddress_2
+    208            {
+    209              status = EE_DELETE_ERROR;
+   \                     ??FI_DeleteCorruptedFlashAddress_1: (+1)
+   \       0x46   0x250D             MOVS     R5,#+13
+   \       0x48   0x0028             MOVS     R0,R5
+    210            }
+    211          
+    212            /* Check FLASH End of Operation flag  */
+    213            if (FLASH->SR & FLASH_SR_EOP)
+   \                     ??FI_DeleteCorruptedFlashAddress_2: (+1)
+   \       0x4A   0x680D             LDR      R5,[R1, #+0]
+   \       0x4C   0x401D             ANDS     R5,R5,R3
+   \       0x4E   0x2D00             CMP      R5,#+0
+   \       0x50   0xD000             BEQ      ??FI_DeleteCorruptedFlashAddress_3
+    214            {
+    215              /* Clear FLASH End of Operation pending bit */
+    216              __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_EOP);
+   \       0x52   0x600B             STR      R3,[R1, #+0]
+    217            }
+    218          
+    219            /* Clear FLASH Programmation bit */
+    220            CLEAR_BIT(FLASH->CR, FLASH_CR_PG);
+   \                     ??FI_DeleteCorruptedFlashAddress_3: (+1)
+   \       0x54   0x6821             LDR      R1,[R4, #+0]
+   \       0x56   0x2301             MOVS     R3,#+1
+   \       0x58   0x4399             BICS     R1,R1,R3
+   \       0x5A   0x6021             STR      R1,[R4, #+0]
+    221          
+    222            /* Clear FLASH ECCD bit */
+    223            __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_ECCD);
+   \       0x5C   0x....             LDR      R1,??DataTable1_2  ;; 0x40022018
+   \       0x5E   0x680B             LDR      R3,[R1, #+0]
+   \       0x60   0x2480             MOVS     R4,#+128
+   \       0x62   0x0624             LSLS     R4,R4,#+24       ;; #-2147483648
+   \       0x64   0x431C             ORRS     R4,R4,R3
+   \       0x66   0x600C             STR      R4,[R1, #+0]
+    224          
+    225            return status;
+   \       0x68   0xB200             SXTH     R0,R0
+   \       0x6A   0xBD30             POP      {R4,R5,PC}       ;; return
+    226          }
+    227          
+    228          /**
+    229            * @brief  Check if the configuration is 128-bits bank or 2*64-bits bank
+    230            * @param  None
+    231            * @retval EE_Status
+    232            *           - EE_OK: on success
+    233            *           - EE error code: if an error occurs
+    234            */
+
+   \                                 In section .text, align 2, keep-with-next
+    235          EE_Status FI_CheckBankConfig(void)
+    236          {
+    237          #if defined (FLASH_DBANK_SUPPORT)
+    238            EE_Status status;
+    239          
+    240            /* Check the value of the DBANK user option byte */
+    241            if (OB_USER_DUALBANK_ENABLE)
+    242            {
+    243              status = EE_OK;
+    244            }
+    245            else
+    246            {
+    247              status = EE_INVALID_BANK_CFG;
+    248            }
+    249          
+    250            return status;
+    251          #else
+    252            /* No feature 128-bits single bank, so always 64-bits dual bank */
+    253            return EE_OK;
+   \                     FI_CheckBankConfig: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x4770             BX       LR               ;; return
+    254          #endif
+    255          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x4002'2014        DC32     0x40022014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x4002'2010        DC32     0x40022010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x4002'2018        DC32     0x40022018
+    256          
+    257          /**
+    258            * @}
+    259            */
+    260          
+    261          /**
+    262            * @}
+    263            */
+    264          
+    265          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   FI_CacheFlush
+       0   FI_CheckBankConfig
+      12   FI_DeleteCorruptedFlashAddress
+      32   FI_PageErase
+        32   -> HAL_FLASHEx_Erase
+      32   FI_PageErase_IT
+        32   -> HAL_FLASHEx_Erase_IT
+      16   FI_WriteDoubleWord
+        16   -> HAL_FLASH_Program
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       2  FI_CacheFlush
+       4  FI_CheckBankConfig
+     108  FI_DeleteCorruptedFlashAddress
+      48  FI_PageErase
+      42  FI_PageErase_IT
+      22  FI_WriteDoubleWord
+
+ 
+ 238 bytes in section .text
+ 
+ 238 bytes of CODE memory
+
+Errors: none
+Warnings: none

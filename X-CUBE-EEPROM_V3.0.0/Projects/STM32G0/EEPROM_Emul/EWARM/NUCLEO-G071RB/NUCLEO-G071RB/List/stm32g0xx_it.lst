@@ -1,0 +1,493 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.4.261/W32 for ARM         09/Dec/2021  10:22:17
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\stm32g0xx_it.c
+#    Command line      =
+#        -f C:\Users\dekaswum\AppData\Local\Temp\EWE3E2.tmp
+#        (D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\stm32g0xx_it.c
+#        -D USE_HAL_DRIVER -D STM32G071xx --preprocess=s
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lC
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -lA
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List
+#        -o
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\STM32G0xx_HAL_Driver\Inc\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Drivers\BSP\STM32G0xx_Nucleo\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Core\\
+#        -I
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\..\..\..\..\..\Middlewares\ST\EEPROM_Emul\Porting\STM32G0\\
+#        -On --use_c++_inline --require_prototypes -I "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\\" -I
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\CMSIS\DSP\Include\\")
+#    Locale            =  C
+#    List file         =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\List\stm32g0xx_it.lst
+#    Object file       =
+#        D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\EWARM\NUCLEO-G071RB\NUCLEO-G071RB\Obj\stm32g0xx_it.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Projects\IO-Link_Implementation\EEPROM\en.x-cube-eeprom_v3.0.0\X-CUBE-EEPROM_V3.0.0\Projects\STM32G0\EEPROM_Emul\Src\stm32g0xx_it.c
+      1          /* USER CODE BEGIN Header */
+      2          /** 
+      3            ******************************************************************************
+      4            * @file    EEPROM_Emul/STM32G0/Src/stm32g0xx_it.c
+      5            * @author  MCD Application Team
+      6            * @brief   Main Interrupt Service Routines.
+      7            ******************************************************************************
+      8            * @attention
+      9            *
+     10            * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics. 
+     11            * All rights reserved.</center></h2>
+     12            *
+     13            * This software component is licensed by ST under BSD 3-Clause license,
+     14            * the "License"; You may not use this file except in compliance with the 
+     15            * License. You may obtain a copy of the License at:
+     16            *                        opensource.org/licenses/BSD-3-Clause
+     17            *
+     18            ******************************************************************************
+     19            */
+     20          /* USER CODE END Header */
+     21          
+     22          /* Includes ------------------------------------------------------------------*/
+     23          #include "main.h"
+     24          #include "stm32g0xx_it.h"
+     25          /* Private includes ----------------------------------------------------------*/
+     26          /* USER CODE BEGIN Includes */
+     27          /* USER CODE END Includes */
+     28          
+     29          /* Private typedef -----------------------------------------------------------*/
+     30          /* USER CODE BEGIN TD */
+     31          
+     32          /* USER CODE END TD */
+     33          
+     34          /* Private define ------------------------------------------------------------*/
+     35          /* USER CODE BEGIN PD */
+     36           
+     37          /* USER CODE END PD */
+     38          
+     39          /* Private macro -------------------------------------------------------------*/
+     40          /* USER CODE BEGIN PM */
+     41          
+     42          /* USER CODE END PM */
+     43          
+     44          /* Private variables ---------------------------------------------------------*/
+     45          /* USER CODE BEGIN PV */
+     46          
+     47          /* During the cleanup phase in EE_Init, AddressRead is the address being read */ 
+     48          extern __IO uint32_t AddressRead;
+     49          /* Flag equal to 1 when the cleanup phase is in progress, 0 if not */
+     50          extern __IO uint8_t CleanupPhase;
+     51          
+     52          /* USER CODE END PV */
+     53          
+     54          /* Private function prototypes -----------------------------------------------*/
+     55          /* USER CODE BEGIN PFP */
+     56          
+     57          /* USER CODE END PFP */
+     58          
+     59          /* Private user code ---------------------------------------------------------*/
+     60          /* USER CODE BEGIN 0 */
+     61          
+     62          /* USER CODE END 0 */
+     63          
+     64          /* External variables --------------------------------------------------------*/
+     65          
+     66          /* USER CODE BEGIN EV */
+     67          
+     68          /* USER CODE END EV */
+     69          
+     70          /******************************************************************************/
+     71          /*           Cortex-M0+ Processor Interruption and Exception Handlers          */ 
+     72          /******************************************************************************/
+     73          /**
+     74            * @brief This function handles Non maskable interrupt.
+     75            */
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void NMI_Handler(void)
+     77          {
+   \                     NMI_Handler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+     78            /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+     79          
+     80            /* Check if NMI is due to flash ECCD (error detection) */
+     81            if (__HAL_FLASH_GET_FLAG(FLASH_FLAG_ECCD))
+   \        0x2   0x....             LDR      R0,??DataTable2  ;; 0x40022018
+   \        0x4   0x6801             LDR      R1,[R0, #+0]
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xD52B             BPL      ??NMI_Handler_0
+     82            {
+     83              if(CleanupPhase==1)
+   \        0xA   0x....             LDR      R1,??DataTable2_1
+   \        0xC   0x7809             LDRB     R1,[R1, #+0]
+   \        0xE   0x2901             CMP      R1,#+1
+   \       0x10   0xD121             BNE      ??NMI_Handler_1
+     84              {
+     85                if ((AddressRead >= START_PAGE_ADDRESS) && (AddressRead <= END_EEPROM_ADDRESS))
+   \       0x12   0x....             LDR      R0,??DataTable2_2
+   \       0x14   0x6801             LDR      R1,[R0, #+0]
+   \       0x16   0x....             LDR      R2,??DataTable2_3  ;; 0x801b000
+   \       0x18   0x4291             CMP      R1,R2
+   \       0x1A   0xD322             BCC      ??NMI_Handler_0
+   \       0x1C   0x6801             LDR      R1,[R0, #+0]
+   \       0x1E   0x....             LDR      R2,??DataTable2_4  ;; 0x8020000
+   \       0x20   0x4291             CMP      R1,R2
+   \       0x22   0xD21E             BCS      ??NMI_Handler_0
+     86                {
+     87                  /* Delete the corrupted flash address */
+     88                  if (EE_DeleteCorruptedFlashAddress((uint32_t)AddressRead) == EE_OK)
+   \       0x24   0x6800             LDR      R0,[R0, #+0]
+   \       0x26   0x....'....        BL       EE_DeleteCorruptedFlashAddress
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD020             BEQ      ??NMI_Handler_2
+     89                  {
+     90                    /* Resume execution if deletion succeeds */
+     91                    return;
+     92                  }
+     93                  /* If we do not succeed to delete the corrupted flash address */
+     94                  /* This might be because we try to write 0 at a line already considered at 0 which is a forbidden operation */
+     95                  /* This problem triggers PROGERR, PGAERR and PGSERR flags */
+     96                  else
+     97                  {
+     98                    /* We check if the flags concerned have been triggered */
+     99                    if((__HAL_FLASH_GET_FLAG(FLASH_FLAG_PROGERR)) && (__HAL_FLASH_GET_FLAG(FLASH_FLAG_PGAERR))  
+    100                       && (__HAL_FLASH_GET_FLAG(FLASH_FLAG_PGSERR)))
+   \                     ??NMI_Handler_3: (+1)
+   \       0x2E   0x2008             MOVS     R0,#+8
+   \       0x30   0x....             LDR      R1,??DataTable2_5  ;; 0x40022010
+   \       0x32   0x680A             LDR      R2,[R1, #+0]
+   \       0x34   0x4002             ANDS     R2,R2,R0
+   \       0x36   0x2A00             CMP      R2,#+0
+   \       0x38   0xD013             BEQ      ??NMI_Handler_0
+   \       0x3A   0x2220             MOVS     R2,#+32
+   \       0x3C   0x680B             LDR      R3,[R1, #+0]
+   \       0x3E   0x4013             ANDS     R3,R3,R2
+   \       0x40   0x2B00             CMP      R3,#+0
+   \       0x42   0xD00E             BEQ      ??NMI_Handler_0
+   \       0x44   0x2380             MOVS     R3,#+128
+   \       0x46   0x680C             LDR      R4,[R1, #+0]
+   \       0x48   0x401C             ANDS     R4,R4,R3
+   \       0x4A   0x2C00             CMP      R4,#+0
+   \       0x4C   0xD009             BEQ      ??NMI_Handler_0
+    101                    {
+    102                      /* If yes, we clear them */
+    103                      __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_PROGERR);
+   \       0x4E   0x6008             STR      R0,[R1, #+0]
+    104                      __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_PGAERR);
+   \       0x50   0x600A             STR      R2,[R1, #+0]
+    105                      __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_PGSERR);
+   \       0x52   0x600B             STR      R3,[R1, #+0]
+    106                      
+    107                      /* And we exit from NMI without doing anything */
+    108                      /* We do not invalidate that line because it is not programmable at 0 till the next page erase */
+    109                      /* The only consequence is that this line will trigger a new NMI later */
+    110                      return;
+   \       0x54   0xE00C             B        ??NMI_Handler_2
+    111                    }
+    112                  }
+    113                }
+    114              }
+    115              else
+    116              {
+    117                __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_ECCD);
+   \                     ??NMI_Handler_1: (+1)
+   \       0x56   0x6801             LDR      R1,[R0, #+0]
+   \       0x58   0x2280             MOVS     R2,#+128
+   \       0x5A   0x0612             LSLS     R2,R2,#+24       ;; #-2147483648
+   \       0x5C   0x430A             ORRS     R2,R2,R1
+   \       0x5E   0x6002             STR      R2,[R0, #+0]
+    118                return;
+   \       0x60   0xE006             B        ??NMI_Handler_2
+    119              }
+    120            }
+    121          
+    122            /* Go to infinite loop when NMI occurs in case:
+    123               - ECCD is raised in eeprom emulation flash pages but corrupted flash address deletion fails (except PROGERR, PGAERR and PGSERR)
+    124               - ECCD is raised out of eeprom emulation flash pages
+    125               - no ECCD is raised */
+    126            
+    127            /* Go to infinite loop when NMI occurs */
+    128            while (1)
+    129            {
+    130              /* Toggle LED2 fast */
+    131              BSP_LED_Toggle(LED4);
+   \                     ??NMI_Handler_0: (+1)
+   \       0x62   0x2000             MOVS     R0,#+0
+   \       0x64   0x....'....        BL       BSP_LED_Toggle
+    132              HAL_Delay(40); 
+   \       0x68   0x2028             MOVS     R0,#+40
+   \       0x6A   0x....'....        BL       HAL_Delay
+   \       0x6E   0xE7F8             B        ??NMI_Handler_0
+    133            }
+   \                     ??NMI_Handler_2: (+1)
+   \       0x70   0xBD10             POP      {R4,PC}          ;; return
+    134            
+    135            /* USER CODE END NonMaskableInt_IRQn 0 */
+    136            /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
+    137          
+    138            /* USER CODE END NonMaskableInt_IRQn 1 */
+    139          }
+    140          
+    141          /**
+    142            * @brief This function handles Hard fault interrupt.
+    143            */
+
+   \                                 In section .text, align 2, keep-with-next
+    144          void HardFault_Handler(void)
+    145          {
+   \                     HardFault_Handler: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    146            /* USER CODE BEGIN HardFault_IRQn 0 */
+    147          
+    148            /* USER CODE END HardFault_IRQn 0 */
+    149            while (1)
+   \                     ??HardFault_Handler_0: (+1)
+   \        0x2   0xE7FE             B        ??HardFault_Handler_0
+    150            {
+    151              /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+    152              /* USER CODE END W1_HardFault_IRQn 0 */
+    153            }
+    154          }
+    155          
+    156          /**
+    157            * @brief This function handles System service call via SWI instruction.
+    158            */
+
+   \                                 In section .text, align 2, keep-with-next
+    159          void SVC_Handler(void)
+    160          {
+    161            /* USER CODE BEGIN SVC_IRQn 0 */
+    162          
+    163            /* USER CODE END SVC_IRQn 0 */
+    164            /* USER CODE BEGIN SVC_IRQn 1 */
+    165          
+    166            /* USER CODE END SVC_IRQn 1 */
+    167          }
+   \                     SVC_Handler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    168          
+    169          /**
+    170            * @brief This function handles Pendable request for system service.
+    171            */
+
+   \                                 In section .text, align 2, keep-with-next
+    172          void PendSV_Handler(void)
+    173          {
+    174            /* USER CODE BEGIN PendSV_IRQn 0 */
+    175          
+    176            /* USER CODE END PendSV_IRQn 0 */
+    177            /* USER CODE BEGIN PendSV_IRQn 1 */
+    178          
+    179            /* USER CODE END PendSV_IRQn 1 */
+    180          }
+   \                     PendSV_Handler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    181          
+    182          /**
+    183            * @brief This function handles System tick timer.
+    184            */
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void SysTick_Handler(void)
+    186          {
+   \                     SysTick_Handler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    187            /* USER CODE BEGIN SysTick_IRQn 0 */
+    188          
+    189            /* USER CODE END SysTick_IRQn 0 */
+    190            HAL_IncTick();
+   \        0x2   0x....'....        BL       HAL_IncTick
+    191            /* USER CODE BEGIN SysTick_IRQn 1 */
+    192          
+    193            /* USER CODE END SysTick_IRQn 1 */
+    194          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+    195          
+    196          /******************************************************************************/
+    197          /* STM32G0xx Peripheral Interrupt Handlers                                    */
+    198          /* Add here the Interrupt Handlers for the used peripherals.                  */
+    199          /* For the available peripheral interrupt handler names,                      */
+    200          /* please refer to the startup file (startup_stm32g0xx.s).                    */
+    201          /******************************************************************************/
+    202          
+    203          /* USER CODE BEGIN 1 */
+    204          
+    205          /**
+    206            * @brief  This function handles Flash interrupt request.
+    207            * @param  None
+    208            * @retval None
+    209            */
+
+   \                                 In section .text, align 2, keep-with-next
+    210          void FLASH_IRQHandler(void)
+    211          {
+   \                     FLASH_IRQHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    212            if( (FLASH->ECCR & FLASH_FLAG_ECCC) != 0 ){
+   \        0x2   0x2080             MOVS     R0,#+128
+   \        0x4   0x05C0             LSLS     R0,R0,#+23       ;; #+1073741824
+   \        0x6   0x....             LDR      R4,??DataTable2  ;; 0x40022018
+   \        0x8   0x6821             LDR      R1,[R4, #+0]
+   \        0xA   0x4001             ANDS     R1,R1,R0
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD002             BEQ      ??FLASH_IRQHandler_0
+    213              __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_ECCC);
+   \       0x10   0x6821             LDR      R1,[R4, #+0]
+   \       0x12   0x4308             ORRS     R0,R0,R1
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    214            }
+    215            HAL_FLASH_IRQHandler();
+   \                     ??FLASH_IRQHandler_0: (+1)
+   \       0x16   0x....'....        BL       HAL_FLASH_IRQHandler
+    216            __HAL_FLASH_ENABLE_IT(FLASH_IT_ECCC);
+   \       0x1A   0x6820             LDR      R0,[R4, #+0]
+   \       0x1C   0x2180             MOVS     R1,#+128
+   \       0x1E   0x0449             LSLS     R1,R1,#+17       ;; #+16777216
+   \       0x20   0x4301             ORRS     R1,R1,R0
+   \       0x22   0x6021             STR      R1,[R4, #+0]
+    217          }
+   \       0x24   0xBD10             POP      {R4,PC}          ;; return
+    218          
+    219          /**
+    220            * @brief  This function handles PVD interrupt request.
+    221            * @param  None
+    222            * @retval None
+    223            */
+
+   \                                 In section .text, align 2, keep-with-next
+    224          void PVD_IRQHandler(void)
+    225          {
+   \                     PVD_IRQHandler: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    226            /* Loop inside the handler to prevent the Cortex from using the Flash,
+    227               allowing the flash interface to finish any ongoing transfer. */
+    228            while (__HAL_PWR_GET_FLAG(PWR_FLAG_PVDO) != RESET)
+   \                     ??PVD_IRQHandler_0: (+1)
+   \        0x2   0x....             LDR      R0,??DataTable2_6  ;; 0x40007014
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x0500             LSLS     R0,R0,#+20
+   \        0x8   0xD4FB             BMI      ??PVD_IRQHandler_0
+    229            {
+    230            }
+    231          }
+   \        0xA   0xBD00             POP      {PC}             ;; return
+    232          
+    233          /**
+    234            * @brief  This function handles external line 10 to 15 interrupt request.
+    235            * @param  None
+    236            * @retval None
+    237            */
+
+   \                                 In section .text, align 2, keep-with-next
+    238          void EXTI4_15_IRQHandler(void)
+    239          {
+   \                     EXTI4_15_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    240            HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
+   \        0x2   0x2080             MOVS     R0,#+128
+   \        0x4   0x0180             LSLS     R0,R0,#+6        ;; #+8192
+   \        0x6   0x....'....        BL       HAL_GPIO_EXTI_IRQHandler
+    241          }
+   \        0xA   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x4002'2018        DC32     0x40022018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     CleanupPhase
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     AddressRead
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x0801'B000        DC32     0x801b000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x0802'0000        DC32     0x8020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x4002'2010        DC32     0x40022010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x4000'7014        DC32     0x40007014
+    242          
+    243          /* USER CODE END 1 */
+    244          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   EXTI4_15_IRQHandler
+         8   -> HAL_GPIO_EXTI_IRQHandler
+       8   FLASH_IRQHandler
+         8   -> HAL_FLASH_IRQHandler
+       4   HardFault_Handler
+       8   NMI_Handler
+         8   -> BSP_LED_Toggle
+         8   -> EE_DeleteCorruptedFlashAddress
+         8   -> HAL_Delay
+       4   PVD_IRQHandler
+       0   PendSV_Handler
+       0   SVC_Handler
+       8   SysTick_Handler
+         8   -> HAL_IncTick
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+      12  EXTI4_15_IRQHandler
+      38  FLASH_IRQHandler
+       4  HardFault_Handler
+     114  NMI_Handler
+      12  PVD_IRQHandler
+       2  PendSV_Handler
+       2  SVC_Handler
+       8  SysTick_Handler
+
+ 
+ 220 bytes in section .text
+ 
+ 220 bytes of CODE memory
+
+Errors: none
+Warnings: none
